@@ -1,0 +1,59 @@
+/* /* custom fonts  */
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Oswald:wght@200&family=PT+Sans&display=swap'); 
+
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans+Condensed:wght@300&family=Raleway:wght@200&display=swap');
+
+
+/* font-family: 'EB Garamond', serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'PT Sans', sans-serif; */
+/* font-family: 'Raleway', sans-serif; */
+
+
+* {
+  box-sizing: border-box;
+  font-family: 'PT Sans', sans-serif;  
+  /* padding: 20px; */
+} 
+
+header{
+
+}
+
+
+h1 {
+ font-family: 'Audiowide', cursive;
+  font-size:62px;
+  width: 100%;
+  color: #000;
+}
+
+h2{
+  max-width: 600px;
+  font-size:22px;
+  
+}
+.work{
+  max-width: 900px;
+   display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-gap: 20px;
+}
+
+.work1{
+  max-width: 300px;
+}
+}
+
+.work2{
+  max-width: 900px;
+   display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 1000px;
+}
+
+
