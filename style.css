@@ -13,7 +13,10 @@ font-family: 'PT Sans', sans-serif; */
   font-family: 'PT Sans', sans-serif;  
   } 
 
-
+header{
+  background-color: #222;
+ 
+}
 /* order properties  */
 h1 {
  font-family: 'Nunito', cursive;
@@ -21,6 +24,17 @@ h1 {
   width: 100%;
   color: #222;
   
+}
+
+.what{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  justify-self: center;
+position: relative;
+padding:20px;
+justify-self: center;
+text-align: center;
+margin-top: 20px;
 }
 h2{
 font-family: 'Nunito', cursive;
@@ -85,6 +99,11 @@ body{
   display: block;
 }
 
+.what{
+  dispaly:grid;
+  grid-template-columns: 1fr 3fr;
+  text-align: center;
+}
 
 hr{
     border: 3px solid green;
