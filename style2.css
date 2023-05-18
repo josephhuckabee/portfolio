@@ -1,106 +1,187 @@
+/* font-family: 'Antonio', sans-serif;
+font-family: 'Bebas Neue', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100&family=Bebas+Neue&family=Fira+Sans&family=Mulish:wght@600&display=swap');
 
 *{
    font-family: 'PT Sans', sans-serif; 
-  justify-content: center;
-   margin-left: auto;
-  margin-right:auto;
-/* background-color: #3572B3; */
+/*   justify-content: center; */
+/*    margin:0; */
+  color: #000;
+ 
+
 }
 
 
 
 html {
-  line-height: 1.15;
+ line-height: 1.15; 
   /* 1 */
-  -webkit-text-size-adjust: 100%;
+/*   -webkit-text-size-adjust: 100%; */
   /* 2 */
+/*   scroll-snap-type: y mandatory; */
 }
 
 header{
-   font-family: 'PT Sans', sans-serif;  
-/*   background-color: #000; */
-  color: #D4AF37;
-   margin:0;
-
-  max-height:50px;
-  position: fixed;
-}
-
-.navbar {
-  overflow: hidden;
-/*   background-color: #000; */
-  font-family: athelas;
-  position: fixed;
+   top: 0;
   width: 100%;
-   margin-left: auto;
-  margin-right:auto;
- background: black;
-}
-
-.navbar a {
+  max-height:220px;
+  position: fixed;
+} 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+ overflow:hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+} 
+li {
   float: left;
-  font-size: 24px;
- color: #FFFBFE;
-  text-align: center;
-  padding: 7px;
-  text-decoration: none;
-  height: auto;
-  
-
- }
-
-
-main{
-/*   margin-top: 20px; */
-padding:120px;
 }
+li a {
+  display: block;
+  color: #000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 24px;
+  font-family: 'Antonio', sans-serif;;
+}
+
+li a:hover {
+/*   background-color: #111; */
+  color: #fff;
+} 
 
 body{
-/* background-color: #3572B3; */
+ background: linear-gradient(333deg, #038DC5,#038DC5, #03C593, #FFBE88);
+	background-size: 600% 600%;
+	animation: gradient 60s ease infinite;
+/* background-color:green; */
+  margin:0;
 }
 
 h1{
- font-family: 'PT Sans', sans-serif;  
-  font-size:40px;
-  width: 100%;
-  color: #F0C89C;
- 
-  
+ font-family: 'Bebas Neue', cursive;
+  font-size:120px;
+  margin 0;
+  padding: 0;
 }
 
 h2{
-  font-family: 'PT Sans', sans-serif;  
- font-size:34px;
+  font-family: 'Antonio', sans-serif;
+ font-size:60px;
+  color:#000;
 }
 
 h3{
-    font-size: 28px;
+  font-family: 'Antonio', sans-serif ;
+    font-size: 50px;
+  margin:0;
+  color:#fff;
 }
+
 h4{
      font-size: 22px;
+    color: #000;
+  font-family: 'Antonio', sans-serif;
 }
 h5{
-    font-size: 20px;
+       font-family: 'Bebas Neue', cursive;
+  font-size:60px;
+  margin 0;
+  color:white;
 }
 
 h6{
-    font-size: 20px;
+    font-family: 'Bebas Neue', cursive;
+  font-size:90px;
+  margin 0;
+  color:white;
 }
 
 p{
-  font-size: 18px;
+  font-size: 24px;
+  font-family: 'Mulish', sans-serif;
 }
 
 img{
 /*   max-width:400px;
   max-height: 400px; */
-  width: auto;
-  max-width: 450px;
+  width: 70%;
+/*   max-width: 300px; */
 }
 
 hr{
   border: 10px;
 }
+
+/* .joe{
+  border: solid white;
+  padding: 30px;
+  max-height: 400px;
+  justify-conent: center;
+  align-items:center;
+ 
+} */
+.container{
+   max-height: 100vh;
+  overflow:scroll;
+  scroll-snap-type: y mandatory;
+  
+}
+
+.contact{
+  padding:50px;
+}
+.phonegrid{  
+  display: grid;
+height: auto;
+grid-template-columns: 50% 50%;
+  grid-auto-rows: auto;
+/*   grid-gap: 40px; */
+height: auto;
+ margin: 0 auto; 
+/*   max-width: 1050px; */
+  width: 100%;
+  padding: 100px;
+   justify-content: space-evenly;
+  justify-items: center;
+  
+}
+.item{
+    display: flex;
+  justify-content: center;
+  align-items:center;
+  height: 100vh;
+  scroll-snap-align:start;
+
+}
+
+.scrolly{
+/*   height:300px; */
+/*   width:300px; */
+ 
+  background-image: url("iphone.png");
+  background-size: 600px;
+  width: 550px;
+  height: 900px;
+  transform: translate(10px, 1%);
+
+}
+
+.scrolzz{
+  background: rgba(255, 255, 255, 0.25);
+ border-radius: 25px;
+   overflow-x:hidden;
+  overflow-y:auto;
+  width: 330px;
+  height: 769px;
+  transform: translate(105px, 3%);
+  padding: 30px;
+}
+
 .homebio{
    box-sizing: border-box;
 /*   background-color:#1BD7BB; */
@@ -129,48 +210,45 @@ width: 100%;
  padding: 5px;
 }
 .grid1{
-   box-sizing: border-box;
-  display: grid;
-  grid-template-columns:50% 50%;
-  grid-auto-rows: auto;
-  grid-gap: 80px;
-height: auto;
- margin: 0 auto; 
-width: 100%;
-  max-width: 1000px;
- padding: 60px;
-  justify-content: space-evenly;
-  justify-items: center;
-  align-content: space-evenly;
-  align-items: center;
-
-
-}
-
-.grid2{
    display: grid;
-/*   background: #14C9CB; */
-  height: auto;
-  background-color: rgba(255, 255, 255, 0.1);
- 
-  grid-template-columns: 50% 50%;
+height: auto;
+grid-template-columns: 50% 50%;
   grid-auto-rows: auto;
   grid-gap: 40px;
-/*    max-width: 1050px; */
 height: auto;
  margin: 0 auto; 
   max-width: 1050px;
   width: 100%;
-  padding: 60px;
+  padding: 10px;
    justify-content: space-evenly;
   justify-items: center;
-/*   align-content: space-evenly;
-  align-items: center; */
+/*   border-style: solid;
+  border-color:#fff; */
+ 
+
+}
+
+
+
+
+
+.grid2{
+   display: grid;
+height: auto;
+grid-template-columns: 50% 50%;
+  grid-auto-rows: auto;
+  grid-gap: 40px;
+ margin: 0 auto; 
+  max-width: 1050px;
+  width: 100%;
+  padding: 10px;
+   justify-content: space-evenly;
+  justify-items: center;
 
 }
 
 .def{
-/*    background-color: #3A6152; */
+
 width: 100%;
   height: auto;
  margin: 0 auto; 
@@ -181,25 +259,21 @@ justify-content:center;
 
 .grid3{
    display: grid;
-  grid-template-columns: 25% 75%;
+height: auto;
+grid-template-columns: 50% 50%;
   grid-auto-rows: auto;
-  grid-gap: 30px;
-   max-width: 1050px;
 height: auto;
  margin: 0 auto; 
- padding: 60px; 
-width: 100%;
-  max-wdith: 900px; 
-  padding: 60px;
+  max-width: 1050px;
+  width: 100%;
+  padding: 10px;
    justify-content: space-evenly;
   justify-items: center;
-  align-content: space-evenly;
-  align-items: center;
 
 }
  
 
-.tech{
+/* .tech{
    display: grid;
   grid-template-columns: 100%;
   grid-auto-rows: auto;
@@ -207,7 +281,7 @@ width: 100%;
 height: auto;
   margin: 0 auto; 
   justify-content:center;
-/* background-image: linear-gradient( #2F7DC2,#FFC190); */
+background-image: linear-gradient( #2F7DC2,#FFC190);
   background-color: light grey;
   width: 100%;
   padding: 40px;
@@ -216,40 +290,42 @@ height: auto;
   align-content: space-evenly;
   align-items: center;
 
-}
+} */
 
-/* .headshot{
-  
-  box-shadow: -20px 14px 54px rgba(0, 0, 0, 0.55);
-   border-radius: 8px 8px 8px 8px;
-  padding: 10px; 
-background-color: rgba(255, 255, 255, 0.2);
-  justify-content: center;
-  margin-top: 40px;
-  padding: 10px;
-  border-color: #FFFBFE;
-
- 
- 
-}  */
 .newshot{
-   box-shadow: -20px 14px 54px rgba(0, 0, 0, 0.55);
-   border-radius: 8px 8px 8px 8px ;
-  padding: 10px; 
-background-color: rgba(255, 255, 255, 0.2);
+ 
+/*    border-radius: 8px 8px 8px 8px ; */
   justify-content: center;
-  margin-top: 40px;
-  padding: 10px;
-  border-color:rgba(0, 0, 0, 0.75);
-  border-style: solid;
-  
+  margin-top:60px;
+  padding: 15px;
+/*   border-color:rgba(0, 0, 0, 0.75); */
+/*   border-style: solid; */
+/* background: rgba(255, 255, 255, 0.25); */
+   background-image: url("iphone.png");
+  background-size: 600px;
+  width: 550px;
+  height: 870px;
+/*   transform: translate(10px, 1%); */
 
 }
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+
+
+
 
 .picborder
 {
-  max-width: 350px;
-  background-color: #3572B3;
+  max-width: 30px;
 }
 
 .card{
@@ -321,7 +397,21 @@ footer{
   align-items: center;
   }
 }
+.first{
+  max-height:100vh;
+  overflow:scroll;
+  scroll-snap-type: y mandatory;
+}
 
+.item{
+  color:white;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+  scroll-snap-align:center;
+}
+}
   @media screen and (max-width: 905px)
 {
   *{
