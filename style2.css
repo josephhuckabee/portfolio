@@ -343,7 +343,16 @@ footer{
   text-align: center;
   height: 50px;
 }
-
+.contact_form{
+height: auto;
+ margin: 0 auto; 
+  justify-content:center;
+/*   place-items: center; */
+width: 100%;
+  max-width: 1050px;
+  padding:5px;
+ 
+}
 
 @media screen and (max-width: 600px)
 *{
