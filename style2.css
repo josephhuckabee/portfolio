@@ -11,7 +11,12 @@ font-family: 'Bebas Neue', cursive; */
 
 }
 
-
+.counter_body{
+  border-style: solid;
+  border-color: black;
+  padding: 40px;
+  font: white;
+}
 
 html {
  line-height: 1.15; 
@@ -469,4 +474,10 @@ footer{
   align-content: space-evenly;
   align-items: center;
   }
+
+
+ 
+
+
+  
 }
