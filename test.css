@@ -7,31 +7,20 @@ font-family: 'Bebas Neue', cursive; */
 /*   justify-content: center; */
 /*    margin:0; */
   color: #000;
- 
-
 }
 
-.counter_body{
-  border-style: solid;
-  border-color: black;
-  padding: 40px;
-  font: white;
-}
-
+/* -------------------------------------------------------html*/
 html {
  line-height: 1.15; 
-  /* 1 */
-/*   -webkit-text-size-adjust: 100%; */
-  /* 2 */
-/*   scroll-snap-type: y mandatory; */
 }
-
+/* -------------------------------------------------------header*/
 header{
    top: 0;
   width: 100%;
   max-height:220px;
   position: fixed;
 } 
+/* -------------------------------------------------------UL*/
 ul {
   list-style-type: none;
   margin: 0;
@@ -41,9 +30,11 @@ ul {
   top: 0;
   width: 100%;
 } 
+/* -------------------------------------------------------LI*/
 li {
   float: left;
 }
+/* -------------------------------------------------------*/
 li a {
   display: block;
   color: #000;
@@ -53,130 +44,130 @@ li a {
   font-size: 24px;
   font-family: 'Antonio', sans-serif;;
 }
-
+/* -------------------------------------------------------LI:HOVER*/
 li a:hover {
 /*   background-color: #111; */
   color: #fff;
 } 
-
+/* -------------------------------------------------------BODY*/
 body{
  background: linear-gradient(333deg, #038DC5,#038DC5, #03C593, #FFBE88);
-	background-size: 600% 600%;
-	animation: gradient 60s ease infinite;
-/* background-color:green; */
+  /* background-size: 600% 600%; */
+  animation: gradient 60s ease infinite;
   margin:0;
 }
+/* -------------------------------------------------------H1*/
+main{
+  padding-top: 100px;
+  
+}
+/* -------------------------------------------------------H1*/
 
 h1{
  font-family: 'Bebas Neue', cursive;
-  font-size:120px;
+  font-size:80px;
   margin 0;
   padding: 0;
 }
-
+/* -------------------------------------------------------H2*/
 h2{
   font-family: 'Antonio', sans-serif;
- font-size:60px;
+ font-size:30px;
   color:#000;
 }
-
+/* -------------------------------------------------------H3*/
 h3{
   font-family: 'Antonio', sans-serif ;
-    font-size: 50px;
+    font-size: 40px;
   margin:0;
   color:#fff;
 }
-
+/* -------------------------------------------------------H4*/
 h4{
      font-size: 22px;
     color: #000;
   font-family: 'Antonio', sans-serif;
 }
+/* -------------------------------------------------------H5*/
 h5{
        font-family: 'Bebas Neue', cursive;
   font-size:60px;
   margin 0;
   color:white;
 }
-
+/* -------------------------------------------------------H6*/
 h6{
     font-family: 'Bebas Neue', cursive;
   font-size:90px;
   margin 0;
   color:white;
 }
-
+/* -------------------------------------------------------P*/
 p{
   font-size: 24px;
   font-family: 'Mulish', sans-serif;
 }
-
+/* -------------------------------------------------------PARAGRAPH*/
 img{
 /*   max-width:400px;
   max-height: 400px; */
-  width: 70%;
+  /* width: 70%; */
 /*   max-width: 300px; */
 }
-
+/* -------------------------------------------------------HR*/
 hr{
   border: 10px;
 }
-
-/* .joe{
-  border: solid white;
-  padding: 30px;
-  max-height: 400px;
-  justify-conent: center;
-  align-items:center;
- 
-} */
+/* ---------------------------------------------------.CONTAINER*/
+/* 
 .container{
    max-height: 100vh;
   overflow:scroll;
   scroll-snap-type: y mandatory;
-  
-}
 
-.contact{
+} */
+/* --------------------------------------------------.CONTACT*/
+/* .contact{
   padding:50px;
-}
-.phonegrid{  
+} */
+/* --------------------------------------------------.PHONEGRID*/
+/* .phonegrid{  
   display: grid;
 height: auto;
 grid-template-columns: 50% 50%;
   grid-auto-rows: auto;
-/*   grid-gap: 40px; */
+
 height: auto;
  margin: 0 auto; 
-/*   max-width: 1050px; */
+
   width: 100%;
   padding: 100px;
    justify-content: space-evenly;
   justify-items: center;
-  
-}
-.item{
+
+} */
+/* -------------------------------------------------------.ITEM*/
+/* .item{
     display: flex;
   justify-content: center;
   align-items:center;
   height: 100vh;
   scroll-snap-align:start;
 
-}
+} */
+/* -------------------------------------------------------.SCROLLY*/
+/* .scrolly{
 
-.scrolly{
-/*   height:300px; */
-/*   width:300px; */
- 
+
   background-image: url("iphone.png");
   background-size: 600px;
   width: 550px;
   height: 900px;
   transform: translate(10px, 1%);
 
-}
-
-.scrolzz{
+}  */
+/* -------------------------------------------------------.SCROLZZ*/
+/* .scrolzz{
   background: rgba(255, 255, 255, 0.25);
  border-radius: 25px;
    overflow-x:hidden;
@@ -185,36 +176,36 @@ height: auto;
   height: 769px;
   transform: translate(105px, 3%);
   padding: 30px;
-}
-
-.homebio{
+} */
+/* -------------------------------------------------------.HOMEBIO*/
+/* .homebio{
    box-sizing: border-box;
-/*   background-color:#1BD7BB; */
 width: 100%;
   height: auto;
  margin: 0 auto; 
   width: 100%;
-}
+} */
 
-
-.devimg{
+/* -------------------------------------------------------.DEVIMG*/
+/* .devimg{
   max-width: 450px;
-/*   box-shadow: 10px 15px; */
-}
 
-.devgrid{
+} */
+/* -------------------------------------------------------.DEVGRID*/
+/* .devgrid{
   display: grid;
   grid-template-columns: 50% 50%;
   grid-auto-rows: auto;
 height: auto;
  margin: 0 auto; 
   justify-content:center;
-/*   place-items: center; */
+
 width: 100%;
   max-width: 1050px;
  padding: 5px;
-}
-.grid1{
+} */
+/* -------------------------------------------------------GRID1*/
+/* .grid1{
    display: grid;
 height: auto;
 grid-template-columns: 50% 50%;
@@ -227,17 +218,16 @@ height: auto;
   padding: 10px;
    justify-content: space-evenly;
   justify-items: center;
-/*   border-style: solid;
-  border-color:#fff; */
- 
-
-}
 
 
 
+} */
+/* -------------------------------------------------------GRID2*/
 
 
-.grid2{
+
+
+/* .grid2{
    display: grid;
 height: auto;
 grid-template-columns: 50% 50%;
@@ -250,19 +240,19 @@ grid-template-columns: 50% 50%;
    justify-content: space-evenly;
   justify-items: center;
 
-}
-
-.def{
+} */
+/* -------------------------------------------------------DEF*/
+/* .def{
 
 width: 100%;
   height: auto;
  margin: 0 auto; 
 justify-content:center;
 
-}
+} */
+/* -------------------------------------------------------GRID3*/
 
-
-.grid3{
+/* .grid3{
    display: grid;
 height: auto;
 grid-template-columns: 50% 50%;
@@ -275,70 +265,45 @@ height: auto;
    justify-content: space-evenly;
   justify-items: center;
 
-}
- 
-
-/* .tech{
-   display: grid;
-  grid-template-columns: 100%;
-  grid-auto-rows: auto;
-   grid-gap: 20px;
-height: auto;
-  margin: 0 auto; 
-  justify-content:center;
-background-image: linear-gradient( #2F7DC2,#FFC190);
-  background-color: light grey;
-  width: 100%;
-  padding: 40px;
-   justify-content: space-evenly;
-  justify-items: center;
-  align-content: space-evenly;
-  align-items: center;
-
 } */
+/* -------------------------------------------------------NEWSHOT*/
 
-.newshot{
- 
-/*    border-radius: 8px 8px 8px 8px ; */
+/* .newshot{
+
   justify-content: center;
   margin-top:60px;
   padding: 15px;
-/*   border-color:rgba(0, 0, 0, 0.75); */
-/*   border-style: solid; */
-/* background: rgba(255, 255, 255, 0.25); */
+
    background-image: url("iphone.png");
   background-size: 600px;
   width: 550px;
   height: 870px;
-/*   transform: translate(10px, 1%); */
-
-}
-
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
 
 
+} */
+/* -------------------------------------------------------KEYFRAMES*/
+/* @keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+ */
+  /* ----------------------------------------------------PICBORDER*/
 
-
+/* 
 .picborder
 {
   max-width: 30px;
-}
-
-.card{
-  
-}
-
+} */
+/* -------------------------------------------------------FOOTER*/
+/* 
 footer{
-/*   background-color: #000; */
+
    position: fixed;
   left: 0;
   bottom: 0;
@@ -347,18 +312,39 @@ footer{
   color: white;
   text-align: center;
   height: 50px;
-}
-.contact_form{
+} */
+/* ---------------------------------------------------CONTACTFORM*/
+/* .contact_form{
 height: auto;
  margin: 0 auto; 
   justify-content:center;
-/*   place-items: center; */
+
 width: 100%;
   max-width: 1050px;
   padding:5px;
- 
+
+} */
+/* -------------------------------------------CONTAINERBIO----*/
+.containerbio{
+   display: grid;
+height: auto;
+grid-template-columns: 60% 40%;
+  grid-auto-rows: auto;
+  grid-gap: 40px;
+ margin: 0 auto; 
+  max-width: 1050px;
+ /* height: 500px; */
+  width: 100%;
+  padding: 10px;
+   justify-content: space-evenly;
+  justify-items: center;
+  overflow: auto; 
+
 }
 
+
+/* -----------------------------------------------MEDIA SCREEN---*/
+/* 
 @media screen and (max-width: 600px)
 *{
   max-width: 550px;
@@ -443,11 +429,7 @@ width: 100%;
   align-items: center;
 }
 
-/*   .devimg{
-   width: 600px;
-    height:auto;
-     padding: 40px;
-     } */
+
 
   .grid1{
      display: grid;
@@ -484,9 +466,6 @@ width: 100%;
   align-items: center;
   }
 
+ */
 
- 
-
-
-  
 }
