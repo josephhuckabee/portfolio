@@ -1,0 +1,471 @@
+/* font-family: 'Antonio', sans-serif;
+font-family: 'Bebas Neue', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100&family=Bebas+Neue&family=Fira+Sans&family=Mulish:wght@600&display=swap');
+
+*{
+   font-family: 'PT Sans', sans-serif; 
+/*   justify-content: center; */
+/*    margin:0; */
+  color: #000;
+}
+
+/* -------------------------------------------------------html*/
+html {
+ line-height: 1.15; 
+}
+/* -------------------------------------------------------header*/
+header{
+   top: 0;
+  width: 100%;
+  max-height:220px;
+  position: fixed;
+} 
+/* -------------------------------------------------------UL*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+ overflow:hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+} 
+/* -------------------------------------------------------LI*/
+li {
+  float: left;
+}
+/* -------------------------------------------------------*/
+li a {
+  display: block;
+  color: #000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 24px;
+  font-family: 'Antonio', sans-serif;;
+}
+/* -------------------------------------------------------LI:HOVER*/
+li a:hover {
+/*   background-color: #111; */
+  color: #fff;
+} 
+/* -------------------------------------------------------BODY*/
+body{
+ background: linear-gradient(333deg, #038DC5,#038DC5, #03C593, #FFBE88);
+  /* background-size: 600% 600%; */
+  animation: gradient 60s ease infinite;
+  margin:0;
+}
+/* -------------------------------------------------------H1*/
+main{
+  padding-top: 100px;
+  
+}
+/* -------------------------------------------------------H1*/
+
+h1{
+ font-family: 'Bebas Neue', cursive;
+  font-size:80px;
+  margin 0;
+  padding: 0;
+}
+/* -------------------------------------------------------H2*/
+h2{
+  font-family: 'Antonio', sans-serif;
+ font-size:30px;
+  color:#000;
+}
+/* -------------------------------------------------------H3*/
+h3{
+  font-family: 'Antonio', sans-serif ;
+    font-size: 40px;
+  margin:0;
+  color:#fff;
+}
+/* -------------------------------------------------------H4*/
+h4{
+     font-size: 22px;
+    color: #000;
+  font-family: 'Antonio', sans-serif;
+}
+/* -------------------------------------------------------H5*/
+h5{
+       font-family: 'Bebas Neue', cursive;
+  font-size:60px;
+  margin 0;
+  color:white;
+}
+/* -------------------------------------------------------H6*/
+h6{
+    font-family: 'Bebas Neue', cursive;
+  font-size:90px;
+  margin 0;
+  color:white;
+}
+/* -------------------------------------------------------P*/
+p{
+  font-size: 24px;
+  font-family: 'Mulish', sans-serif;
+}
+/* -------------------------------------------------------PARAGRAPH*/
+img{
+/*   max-width:400px;
+  max-height: 400px; */
+  /* width: 70%; */
+/*   max-width: 300px; */
+}
+/* -------------------------------------------------------HR*/
+hr{
+  border: 10px;
+}
+/* ---------------------------------------------------.CONTAINER*/
+/* 
+.container{
+   max-height: 100vh;
+  overflow:scroll;
+  scroll-snap-type: y mandatory;
+
+} */
+/* --------------------------------------------------.CONTACT*/
+/* .contact{
+  padding:50px;
+} */
+/* --------------------------------------------------.PHONEGRID*/
+/* .phonegrid{  
+  display: grid;
+height: auto;
+grid-template-columns: 50% 50%;
+  grid-auto-rows: auto;
+
+height: auto;
+ margin: 0 auto; 
+
+  width: 100%;
+  padding: 100px;
+   justify-content: space-evenly;
+  justify-items: center;
+
+} */
+/* -------------------------------------------------------.ITEM*/
+/* .item{
+    display: flex;
+  justify-content: center;
+  align-items:center;
+  height: 100vh;
+  scroll-snap-align:start;
+
+} */
+/* -------------------------------------------------------.SCROLLY*/
+/* .scrolly{
+
+
+  background-image: url("iphone.png");
+  background-size: 600px;
+  width: 550px;
+  height: 900px;
+  transform: translate(10px, 1%);
+
+}  */
+/* -------------------------------------------------------.SCROLZZ*/
+/* .scrolzz{
+  background: rgba(255, 255, 255, 0.25);
+ border-radius: 25px;
+   overflow-x:hidden;
+  overflow-y:auto;
+  width: 330px;
+  height: 769px;
+  transform: translate(105px, 3%);
+  padding: 30px;
+} */
+/* -------------------------------------------------------.HOMEBIO*/
+/* .homebio{
+   box-sizing: border-box;
+width: 100%;
+  height: auto;
+ margin: 0 auto; 
+  width: 100%;
+} */
+
+/* -------------------------------------------------------.DEVIMG*/
+/* .devimg{
+  max-width: 450px;
+
+} */
+/* -------------------------------------------------------.DEVGRID*/
+/* .devgrid{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-auto-rows: auto;
+height: auto;
+ margin: 0 auto; 
+  justify-content:center;
+
+width: 100%;
+  max-width: 1050px;
+ padding: 5px;
+} */
+/* -------------------------------------------------------GRID1*/
+/* .grid1{
+   display: grid;
+height: auto;
+grid-template-columns: 50% 50%;
+  grid-auto-rows: auto;
+  grid-gap: 40px;
+height: auto;
+ margin: 0 auto; 
+  max-width: 1050px;
+  width: 100%;
+  padding: 10px;
+   justify-content: space-evenly;
+  justify-items: center;
+
+
+
+} */
+/* -------------------------------------------------------GRID2*/
+
+
+
+
+/* .grid2{
+   display: grid;
+height: auto;
+grid-template-columns: 50% 50%;
+  grid-auto-rows: auto;
+  grid-gap: 40px;
+ margin: 0 auto; 
+  max-width: 1050px;
+  width: 100%;
+  padding: 10px;
+   justify-content: space-evenly;
+  justify-items: center;
+
+} */
+/* -------------------------------------------------------DEF*/
+/* .def{
+
+width: 100%;
+  height: auto;
+ margin: 0 auto; 
+justify-content:center;
+
+} */
+/* -------------------------------------------------------GRID3*/
+
+/* .grid3{
+   display: grid;
+height: auto;
+grid-template-columns: 50% 50%;
+  grid-auto-rows: auto;
+height: auto;
+ margin: 0 auto; 
+  max-width: 1050px;
+  width: 100%;
+  padding: 10px;
+   justify-content: space-evenly;
+  justify-items: center;
+
+} */
+/* -------------------------------------------------------NEWSHOT*/
+
+/* .newshot{
+
+  justify-content: center;
+  margin-top:60px;
+  padding: 15px;
+
+   background-image: url("iphone.png");
+  background-size: 600px;
+  width: 550px;
+  height: 870px;
+
+
+} */
+/* -------------------------------------------------------KEYFRAMES*/
+/* @keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+ */
+  /* ----------------------------------------------------PICBORDER*/
+
+/* 
+.picborder
+{
+  max-width: 30px;
+} */
+/* -------------------------------------------------------FOOTER*/
+/* 
+footer{
+
+   position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  height: 50px;
+} */
+/* ---------------------------------------------------CONTACTFORM*/
+/* .contact_form{
+height: auto;
+ margin: 0 auto; 
+  justify-content:center;
+
+width: 100%;
+  max-width: 1050px;
+  padding:5px;
+
+} */
+/* -------------------------------------------CONTAINERBIO----*/
+.containerbio{
+   display: grid;
+height: auto;
+grid-template-columns: 60% 40%;
+  grid-auto-rows: auto;
+  grid-gap: 40px;
+ margin: 0 auto; 
+  max-width: 1050px;
+ /* height: 500px; */
+  width: 100%;
+  padding: 10px;
+   justify-content: space-evenly;
+  justify-items: center;
+  overflow: auto; 
+
+}
+
+
+/* -----------------------------------------------MEDIA SCREEN---*/
+/* 
+@media screen and (max-width: 600px)
+*{
+  max-width: 550px;
+}
+{
+  .devgrid{
+   display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+     padding: 40px;
+     justify-content: space-evenly;
+  justify-items: center;
+  align-content: space-evenly;
+  align-items: center;
+}
+
+  .grid1{
+     display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+     padding: 40px;
+     justify-content: space-evenly;
+  justify-items: center;
+  align-content: space-evenly;
+  align-items: center;
+  }
+  .grid2{
+     display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+     padding: 40px;
+     justify-content: space-evenly;
+  justify-items: center;
+  align-content: space-evenly;
+  align-items: center;
+  }
+
+  .grid3{
+     display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+     padding: 40px;
+     justify-content: space-evenly;
+  justify-items: center;
+  align-content: space-evenly;
+  align-items: center;
+  }
+}
+.first{
+  max-height:100vh;
+  overflow:scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.item{
+  color:white;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+  scroll-snap-align:center;
+}
+}
+  @media screen and (max-width: 905px)
+{
+  *{
+  max-width: 700px;
+}
+  .devgrid{
+   display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 20px;
+     padding: 40px;
+     justify-content: space-evenly;
+  justify-items: center;
+  align-content: space-evenly;
+  align-items: center;
+}
+
+
+
+  .grid1{
+     display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 20px;
+     padding: 40px;
+     justify-content: space-evenly;
+  justify-items: center;
+  align-content: space-evenly;
+  align-items: center;
+  }
+
+  .grid2{
+     display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 20px;
+     padding: 40px;
+     justify-content: space-evenly;
+  justify-items: center;
+  align-content: space-evenly;
+  align-items: center;
+  }
+  .grid3{
+     display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 20px;
+    padding: 40px;
+     justify-content: space-evenly;
+  justify-items: center;
+  align-content: space-evenly;
+  align-items: center;
+  }
+
+ */
+
+}
