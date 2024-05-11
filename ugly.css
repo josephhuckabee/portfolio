@@ -4,18 +4,9 @@ font-family: 'Bebas Neue', cursive; */
 
 *{
    font-family: 'PT Sans', sans-serif; 
-/*   justify-content: center; */
-/*    margin:0; */
-  color: #000;
- 
-
-}
-
-.counter_body{
-  border-style: solid;
-  border-color: black;
-  padding: 40px;
-  font: white;
+  background-color: #000;
+   color: #fff;
+  padding:20px;
 }
 
 html {
@@ -46,7 +37,7 @@ li {
 }
 li a {
   display: block;
-  color: #000;
+  color: #fff;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -60,11 +51,8 @@ li a:hover {
 } 
 
 body{
- background: linear-gradient(333deg, #038DC5,#038DC5, #03C593, #FFBE88);
-	background-size: 600% 600%;
-	animation: gradient 60s ease infinite;
-/* background-color:green; */
   margin:0;
+  padding: 20px;
 }
 
 h1{
@@ -76,265 +64,87 @@ h1{
 
 h2{
   font-family: 'Antonio', sans-serif;
- font-size:60px;
-  color:#000;
+ font-size:40px;
+  color:#fff;
 }
 
 h3{
   font-family: 'Antonio', sans-serif ;
-    font-size: 50px;
+    font-size:30px;
   margin:0;
   color:#fff;
 }
 
 h4{
-     font-size: 22px;
-    color: #000;
+     font-size: 25px;
+    color: #fff;
   font-family: 'Antonio', sans-serif;
 }
 h5{
        font-family: 'Bebas Neue', cursive;
-  font-size:60px;
+  font-size:22.5px;
   margin 0;
   color:white;
 }
 
 h6{
     font-family: 'Bebas Neue', cursive;
-  font-size:90px;
+  font-size:20px;
   margin 0;
   color:white;
 }
 
 p{
-  font-size: 24px;
+  /* font-size: 24px; */
   font-family: 'Mulish', sans-serif;
 }
 
-img{
-/*   max-width:400px;
-  max-height: 400px; */
-  width: 70%;
-/*   max-width: 300px; */
-}
-
 hr{
-  border: 10px;
+  border: 2px;
 }
 
-/* .joe{
-  border: solid white;
-  padding: 30px;
-  max-height: 400px;
-  justify-conent: center;
-  align-items:center;
- 
-} */
-.container{
-   max-height: 100vh;
-  overflow:scroll;
-  scroll-snap-type: y mandatory;
-  
-}
 
-.contact{
-  padding:50px;
-}
-.phonegrid{  
+.grid{
   display: grid;
-height: auto;
-grid-template-columns: 50% 50%;
-  grid-auto-rows: auto;
-/*   grid-gap: 40px; */
-height: auto;
- margin: 0 auto; 
-/*   max-width: 1050px; */
-  width: 100%;
-  padding: 100px;
-   justify-content: space-evenly;
-  justify-items: center;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns of equal width */
+  grid-template-rows: repeat(4, 1fr);   /* 4 rows of equal height */
+  gap: 10px; /* gap between grid items */
+  justify-content: center; /* centers the grid horizontally */
+  align-content: center; /* centers the grid vertically */
+   padding: 20px;
+ 
+}
+/* 
+.card {
+  max-width: 350px;
+  border: .5px solid #ddd;
+  border-radius: 3px;
+  overflow: hidden;
+}
+*/
+
+.card {
+   max-width: 350px;
+    border: .5px solid #ddd;
+    border-radius: 3px;
+    overflow: hidden;
   
 }
-.item{
-    display: flex;
-  justify-content: center;
-  align-items:center;
-  height: 100vh;
-  scroll-snap-align:start;
 
+.card-header {
 }
 
-.scrolly{
-/*   height:300px; */
-/*   width:300px; */
- 
-  background-image: url("iphone.png");
-  background-size: 600px;
-  width: 550px;
-  height: 900px;
-  transform: translate(10px, 1%);
-
+.card-body {
+   padding: 10px;
 }
-
-.scrolzz{
-  background: rgba(255, 255, 255, 0.25);
- border-radius: 25px;
-   overflow-x:hidden;
-  overflow-y:auto;
-  width: 330px;
-  height: 769px;
-  transform: translate(105px, 3%);
-  padding: 30px;
-}
-
-.homebio{
-   box-sizing: border-box;
-/*   background-color:#1BD7BB; */
-width: 100%;
+.card img {
+  max-width: 350px;
   height: auto;
- margin: 0 auto; 
-  width: 100%;
-}
+  display: block;
+} ma
 
-
-.devimg{
-  max-width: 450px;
-/*   box-shadow: 10px 15px; */
-}
-
-.devgrid{
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-auto-rows: auto;
-height: auto;
- margin: 0 auto; 
-  justify-content:center;
-/*   place-items: center; */
-width: 100%;
-  max-width: 1050px;
- padding: 5px;
-}
-.grid1{
-   display: grid;
-height: auto;
-grid-template-columns: 50% 50%;
-  grid-auto-rows: auto;
-  grid-gap: 40px;
-height: auto;
- margin: 0 auto; 
-  max-width: 1050px;
-  width: 100%;
-  padding: 10px;
-   justify-content: space-evenly;
-  justify-items: center;
-/*   border-style: solid;
-  border-color:#fff; */
- 
-
-}
-
-
-
-
-
-.grid2{
-   display: grid;
-height: auto;
-grid-template-columns: 50% 50%;
-  grid-auto-rows: auto;
-  grid-gap: 40px;
- margin: 0 auto; 
-  max-width: 1050px;
-  width: 100%;
-  padding: 10px;
-   justify-content: space-evenly;
-  justify-items: center;
-
-}
-
-.def{
-
-width: 100%;
-  height: auto;
- margin: 0 auto; 
-justify-content:center;
-
-}
-
-
-.grid3{
-   display: grid;
-height: auto;
-grid-template-columns: 50% 50%;
-  grid-auto-rows: auto;
-height: auto;
- margin: 0 auto; 
-  max-width: 1050px;
-  width: 100%;
-  padding: 10px;
-   justify-content: space-evenly;
-  justify-items: center;
-
-}
- 
-
-/* .tech{
-   display: grid;
-  grid-template-columns: 100%;
-  grid-auto-rows: auto;
-   grid-gap: 20px;
-height: auto;
-  margin: 0 auto; 
-  justify-content:center;
-background-image: linear-gradient( #2F7DC2,#FFC190);
-  background-color: light grey;
-  width: 100%;
-  padding: 40px;
-   justify-content: space-evenly;
-  justify-items: center;
-  align-content: space-evenly;
-  align-items: center;
-
-} */
-
-.newshot{
- 
-/*    border-radius: 8px 8px 8px 8px ; */
-  justify-content: center;
-  margin-top:60px;
-  padding: 15px;
-/*   border-color:rgba(0, 0, 0, 0.75); */
-/*   border-style: solid; */
-/* background: rgba(255, 255, 255, 0.25); */
-   background-image: url("iphone.png");
-  background-size: 600px;
-  width: 550px;
-  height: 870px;
-/*   transform: translate(10px, 1%); */
-
-}
-
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-
-
-
-
-.picborder
-{
-  max-width: 30px;
-}
-
-.card{
-  
+.hidden {
+    display: none;
 }
 
 footer{
@@ -358,7 +168,7 @@ width: 100%;
   padding:5px;
  
 }
-
+/* 
 @media screen and (max-width: 600px)
 *{
   max-width: 550px;
@@ -449,7 +259,7 @@ width: 100%;
      padding: 40px;
      } */
 
-  .grid1{
+  /* .grid1{
      display: grid;
   align-items: center;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -483,10 +293,10 @@ width: 100%;
   align-content: space-evenly;
   align-items: center;
   }
-
+ */
 
  
 
 
   
-}
+} 
