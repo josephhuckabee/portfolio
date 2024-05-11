@@ -1,15 +1,15 @@
-let saveEl = document.getElementById("save-el")
-let countEl = document.getElementById("count-el")
-let count = 0
+// Select all cards with the class 'card'
+const cards = document.querySelectorAll('.card');
 
-function increment() {
-    count += 1
-    countEl.textContent = count
-}
+// Loop through each card and add a click event listener
+cards.forEach((card) => {
+    card.addEventListener('click', () => {
+        // Get the card-body element inside the clicked card
+        const cardBody = card.querySelector('.card-body');
 
-function save() {
-    let countStr = count + " - "
-    saveEl.textContent += countStr
-    countEl.textContent = 0
-    count = 0
-}
+        // Toggle the 'hidden' class to show/hide the content
+        if (cardBody) { // Ensure there's a card-body element
+            cardBody.classList.toggle('hidden');
+        }
+    });
+});
