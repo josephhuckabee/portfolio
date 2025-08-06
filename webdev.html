@@ -3,66 +3,64 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" type="text/css" href="style.css">
-
-
-
-
-<title>350port</title>
-<div class="head">
-  <div class="navbar">
-  <a href="index.html">home</a>
-  <a href="info.html">contact</a>
-  <div class="dropdown">
-    <button class="dropbtn">portfolio
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="uxui.html">uxui</a>
-      <a href="webdev.html">web dev</a>
-<!--       <a href="#">Link 3</a> -->
-    </div>
-  </div>
-</div>
-  
-  <img src="devslogo.png" width="150" height="50"> 
-  </div>
-
-  
-  <h2>portfolio</h2>
- 
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>350port</title>
+  </head>
   <body>
-    <section class="grid">
-      <div class="content1">
-        <a href="https://josephhuckabee.github.io/js-animation-story-spring21/"> <img src="p5story.png" width="100%" height="auto"></a>
-          <br>
-          <h3>Javasctipt Animation made in p5.js</h3>
-        
-      </div>
-      <div class="card2">
-         <img src="cl.png" width="100%" height="auto">
-<a href="https://josephhuckabee.github.io/craigslistmockup-spring21/"><h2>Responsive Web Design</h2></a>
-        <img src="cl.png" width="100%" height="auto">
-      </div>
- 
-      <div class="card2">
-        <h3>Figma UX - 
-      UI Design</h3>
-        <img src="xplor.png" width="100%" height="auto">
-      </div>
-   
-         <div class="card2"><h3>Illustrator, Photoshop, and AfterEffects </h3>
-           
-    <iframe width="100%" height="auto" src="https://www.youtube.com/embed/Qe3HeYLybMU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
+    <header role="banner">
+      <nav role="navigation" aria-label="Main navigation" class="navbar">
+        <a href="index.html">home</a>
+        <a href="info.html">contact</a>
+        <div class="dropdown">
+          <button class="dropbtn">portfolio
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="uxui.html">uxui</a>
+            <a href="webdev.html">web dev</a>
+          </div>
+        </div>
+      </nav>
+      <img src="devslogo.png" alt="Developer's Logo">
+    </header>
 
-   </section>
+    <main role="main">
+      <h1>Portfolio</h1>
+      <section class="grid">
+        <article class="content1">
+          <h2>Javascript Animation made in p5.js</h2>
+          <figure>
+            <a href="https://josephhuckabee.github.io/js-animation-story-spring21/">
+              <img src="p5story.png" alt="Screenshot of Javascript Animation project">
+            </a>
+          </figure>
+        </article>
 
-    
-    
-  <div class="footer"><h1>copyrights</h1>
-  </div>
+        <article class="card2">
+          <h2>Responsive Web Design</h2>
+          <figure>
+            <a href="https://josephhuckabee.github.io/craigslistmockup-spring21/">
+              <img src="cl.png" alt="Responsive Web Design project screenshot">
+            </a>
+          </figure>
+        </article>
+
+        <article class="card2">
+          <h2>Figma UX - UI Design</h2>
+          <figure>
+            <img src="xplor.png" alt="Figma UX UI Design project screenshot">
+          </figure>
+        </article>
+
+        <article class="card2">
+          <h2>Illustrator, Photoshop, and AfterEffects</h2>
+          <iframe src="https://www.youtube.com/embed/Qe3HeYLybMU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </article>
+      </section>
+    </main>
+
+    <div class="footer">
+      <h1>copyrights</h1>
+    </div>
   </body>
-</div>
-  
 </html>

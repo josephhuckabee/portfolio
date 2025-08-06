@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100&family=Bebas+Neue&family=Fira+Sans&family=Mulish:wght@600&display=swap');
+
+* {
+    font-family: 'PT Sans', sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    line-height: 1.15;
+}
+
+body {
+    margin: 0;
+    padding: 30px;
+    background-color: #000;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: 'Antonio', sans-serif;
+}
+
+li a:hover {
+    color: orange;
+}
+
+h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 90px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-family: 'Antonio', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+h2:hover {
+    color: orange;
+}
+
+h3 {
+    font-family: 'Antonio', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+    color: #fff;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 767px) {
+    body {
+        max-width: 80%;
+        margin: 0 auto;
+        padding: 10px;
+        background-color: blue;
+        justify-content: center;
+    }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    body {
+        max-width: 80%;
+        margin: 0 auto;
+        padding: 10px;
+        background-color: red;
+        justify-content: center;
+    }
+
+    .grid2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-content: center;
+        padding: 20px;
+        margin: 0;
+    }
+  h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 60px;
+    text-align: center;
+  margin: 0;
+  padding: 0;
+  }
+
+  h2 {
+    font-family: 'Antonio', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+  }
+
+  h2:hover {
+    color: orange;
+  }
+
+  h3 {
+    font-family: 'Antonio', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+    color: #fff;
+  }
+
+  .grid2 img {
+      width: 200px;
+      height: 300px;
+      object-fit: scale-down;
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 992px) {
+    header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        max-height: 220px;
+        background-color: #000;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: #fff;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 24px;
+        font-family: 'Antonio', sans-serif;
+    }
+
+    li a:hover {
+        color: orange;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 20px;
+        justify-content: center;
+        align-content: center;
+        padding: 20px;
+        margin: 0;
+    }
+
+    .grid2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        justify-content: center;
+        align-content: center;
+        max-width: 1050px;
+    }
+
+    .grid2 img {
+        width: 400px;
+        height: 350px;
+        object-fit: scale-down;
+    }
+
+    .card {
+        padding: 0;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card:hover {
+        background-color: rgba(240, 243, 245, 0.1);
+        padding-bottom: 20px;
+    }
+
+    .card-body {
+        width: 80%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .card img {
+        width: 300px;
+        height: 150px;
+        object-fit: scale-down;
+    }
+
+    .contact_form {
+        height: auto;
+        margin: 0 auto;
+        justify-content: center;
+        width: 100%;
+        max-width: 600px;
+        background-color: #fff;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: 100%;
+        max-width: 600px;
+    }
+
+    footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: black;
+        color: white;
+        text-align: center;
+        height: 25px;
+    }
+}

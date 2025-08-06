@@ -1,55 +1,55 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
-<title>
- Contact
-</title>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
+<body>
+<center>
+  <header role="banner">
+    <nav role="navigation" aria-label="Main navigation">
+      <div class="navbar">
+        <ul>
+          <li><a href="index.html">home</a></li>
+          <li><a href="portfolio.html">coding</a></li>
+          <li><a href="contact.html">contact</a></li>
+          <li><a href="logos.html">design</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-
-
-   <header>
-<nav>
-<div class="navbar">
-  <ul>
-    <li><a href="index.html">home</a></li>
-    <li><a href="portfolio.html">portfolio</a></li>
-    <li><a href="contact.html">contact</a></li>
-  
-  </ul> 
-</div>
-</nav>
-
-</header>
-
-  <body>
   <main>
-
-  <section class="contact">
-  <h2>We want to hear from you!</h2>Whether you are inquiring about our services or you have a simple question<br>We are here for you<br><form action="POST" data-netlify="true">
-  <label for="fname">First name</label><br>
-  <input type="text" id="fname" name="fname" value=""><br><br>
-  <label for="lname">Last name</label><br>
-  <input type="text" id="lname" name="lname" value=""><br><br>
-  <label for="email">Email</label><br>
-  <input type="text" id="email" name="email" value=""><br><br>
-  <input type="submit" value="Submit">
-</form> 
-   <br><div data-netlify-recaptcha="true"></div>
+    <section class="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">We want to hear from you!</h2>
+      <p>Whether you’re inquiring about services or just have a question, we're here to help.</p>
       
-    </section>
- 
-</main>
-    
-<footer>
-  <h3>copyrights</h3>
-  </footer>
-    
+      <form method="POST" data-netlify="true" name="contact">
+        <fieldset>
+          <legend>Contact Form</legend>
 
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="fname" placeholder="First name" required />
+
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lname" placeholder="Last name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+          <div data-netlify-recaptcha="true"></div>
+
+          <input type="submit" value="Submit" />
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <p>&copy; Joseph Huckabee. All rights reserved.</p>
+  </footer>
+</center>
 </body>
 </html>
