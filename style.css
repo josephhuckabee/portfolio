@@ -82,7 +82,7 @@ h2 {
 h3 {
   font-family: var(--font-base);
   font-size: clamp(1rem, 2.5vw, 1.30rem);
-
+color:black;
 }
 
 
