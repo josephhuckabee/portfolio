@@ -1,87 +1,70 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
-<title>
-  Design
-</title>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style2.css" rel="stylesheet" type="text/css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Logo Design - Joseph Huckabee</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
-
-
-
-  
-
-
-  
-<header>
-
-<nav>
-  <ul>
-    <li><a href="index.html">home</a></li>
-    <li><a href="portfolio.html">portfolio</a></li>
-    <li><a href="contact.html">contact</a></li>
-     <li><a href="ux.html">ux</a></li>
-     <li><a href="counter.html">counter</a></li>
-  </ul> 
-</nav>
-</header>
-
- <ul>
-  <li><a href="index.html">home</a></li>
-  <li><a href="portfolio.html">portfolio</a></li>
-  <li><a href="contact.html">contact</a></li>
-   <li><a href="logos.html">logos</a></li>
-</ul> 
-
+<body>
+  <header role="banner">
+    <nav role="navigation" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">home</a></li>
+        <li><a href="portfolio.html">coding</a></li>
+        <li><a href="contact.html">contact</a></li>
+        <li><a href="logos.html">design</a></li>
+      </ul>
+    </nav>
   </header>
 
-  
-<body>
-  
-<main>
-  <br><br><div class="devgrid"><h1>Logo Design</h1></div><br>
-<!--   <h2>Web Development</h2> -->
-  <section class="devgrid">
-    <div class="web"><a href="https://splendid-seahorse-722b05.netlify.app/"><img src="devslogo.png" class="devimg"></a>
-    </div>
-    </div>
-         <div class="web"><h3>Anthropos</h3><hr><br><br>Anthropos is a design focused campaign created by Jeffrey "last name" and myself for our Multimedia Project Lab final. We chose the social cause "homelessness in NYC". Our research outlines the many factors that can cause homlessness in NYC along with several resources to guide anyone in need find a helping hand.
-    </div>
-     </section>
-    <section class="devgrid">
-    <div class="web"><a href="https://240final.codeguy-ux.repl.co/index.html"><img src="pinkdust.gif" class="devimg"></a></div>
-         <div class=""><h3>Sirius</h3><hr><br><br>Serious is a website I built for a final project in an advanced Web Dev course. It is a website tht provides information about our solar system! The audience for this site is typically between 14-100 years old. Anyone who is curious about what going on around us. 
+  <main role="main">
+    <section class="page-title" aria-labelledby="logos-heading">
+      <h1 id="logos-heading">Logo Design</h1>
+    </section>
 
-    </div>
-     </section> 
-  
-  <section class="devgrid">
-    <div class="web"><a href="https://splendid-seahorse-722b05.netlify.app/"><img src="xxpp.png" class="devimg"></a>
-    </div>
-         <div class=""><h3>Personal Portfolio</h3><hr><br><br>Anthropos is a campaing created by Jeffrey and myself for our Multiedia Project Lab group final project.<br><br>HTML5 + CSS<br><br> created in Repl.it and GitHub - deployed on Netlify
+    <section class="grid" aria-label="Logo Projects">
+      <article class="card">
+        <figure>
+          <a href="https://splendid-seahorse-722b05.netlify.app/">
+            <img src="devslogo.png" alt="Anthropos campaign logo" class="responsive-img" />
+          </a>
+          <figcaption><h2>Anthropos</h2></figcaption>
+        </figure>
+        <p>
+          Anthropos is a design-focused campaign created by Jeffrey and myself for our Multimedia Project Lab final. We addressed the issue of homelessness in NYC by researching its causes and compiling resources to help those in need. The visual identity was developed collaboratively and is presented as part of an interactive campaign website.
+        </p>
+      </article>
 
-    </div>
-     </section>
-<!--   
-   <section class="devgrid">
-    <div class="web"><a href="https://splendid-seahorse-722b05.netlify.app/"><img src="antropos.png" class="devimg"></a>
-    </div>
-         <div class=""><h3>ANTHROPOS</h3><hr><br><br>Anthropos is a campaing created by Jeffrey and myself for our Multiedia Project Lab group final project.<br><br>HTML5 + CSS<br><br> created in Repl.it and GitHub - deployed on Netlify
+      <article class="card">
+        <figure>
+          <a href="https://240final.codeguy-ux.repl.co/index.html">
+            <img src="pinkdust.gif" alt="Sirius website preview" class="responsive-img" />
+          </a>
+          <figcaption><h2>Sirius</h2></figcaption>
+        </figure>
+        <p>
+          Sirius is a website I built for a final project in an advanced Web Development course. It offers educational content about our solar system and is designed for audiences aged 14 and up. The site aims to make space exploration accessible and engaging to curious minds of all backgrounds.
+        </p>
+      </article>
 
-    </div>
-     </section> -->
+      <article class="card">
+        <figure>
+          <a href="https://splendid-seahorse-722b05.netlify.app/">
+            <img src="xxpp.png" alt="Personal portfolio website preview" class="responsive-img" />
+          </a>
+          <figcaption><h2>Personal Portfolio</h2></figcaption>
+        </figure>
+        <p>
+          My personal portfolio site showcases my work in design, development, and multimedia. Built using HTML5 and CSS, the site was developed on Replit, versioned on GitHub, and deployed via Netlify. It highlights my creative style and technical skill through curated project examples and a minimalist layout.
+        </p>
+      </article>
+    </section>
+  </main>
 
+  <footer role="contentinfo">
+    <p>&copy; Joseph Huckabee. All rights reserved.</p>
+  </footer>
 
-    
-</main>
-  <footer>Copyrights</footer>
-  </div>
-      
-
-  
 </body>
 </html>

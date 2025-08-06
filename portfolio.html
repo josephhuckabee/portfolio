@@ -1,63 +1,76 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width">
-  <title> Portfolio</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
-<header>
-<nav>
-<ul>
-    <li><a href="index.html">home</a></li>
-    <li><a href="portfolio.html">portfolio</a></li>
-    <li><a href="contact.html">contact</a></li>
-</ul> 
-</nav>
-</header> 
 <body>
-  
-<main>
-  <div>
-    <h1>Portfolio</h1>
 
-    </div>
-  <section class="grid">
-  <div class="card">
-      <div class="card-header"><center><img src="ant_logo.png"></center></div>
-      <div class="card-body hidden">
-              <a href="https://splendid-seahorse-722b05.netlify.app" target="_blank" rel="noopener noreferrer"><h2>Anthropos</h2></a>Anthropos is a design-focused campaign that Jeffrey [Last Name] and I developed for our Multimedia Project Lab final. Our chosen social cause is homelessness in New York City, and we conducted extensive research to identify the factors that contribute to this issue. Our campaign offers comprehensive resources to guide individuals in need towards finding the assistance they require. Through our efforts, we aim to raise awareness and provide practical support to combat homelessness in NYC.<br><br>
-        Items created: <br> Logo and design created in Adobe Illustrator and Adobe Photoshop<br> Programming done through Replit and Deployed via Netlify<br><br><br><center></center>
-        </center>
-      </div>
-  </div>
+  <header role="banner">
+    <nav role="navigation" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">home</a></li>
+        <li><a href="portfolio.html">coding</a></li>
+        <li><a href="contact.html">contact</a></li>
+        <li><a href="logos.html">design</a></li>
+      </ul> 
+    </nav>
+  </header> 
 
-    <div class="card">
-        <div class="card-header"><center><img src="sirius.png"></center></div>
-        <div class="card-body hidden">
-         <a href="https://deploy-preview-5--jocular-truffle-aa535c.netlify.app" target="_blank"><h2>Sirius</h2></a> Sirius is a website that I designed and developed as part of an advanced Web Development course. The website is designed to provide comprehensive information about our solar system, catering to a broad audience demographic ranging from 14 to 100 years old. Our aim is to provide individuals who are curious about the workings of our universe with accurate and engaging content that informs and educates. Through this website, users can access a wealth of information about the solar system, its celestial objects, and their properties, helping them to expand their knowledge and satisfy their curiosity.
-      
-        </div>
-    </div>
+  <main role="main">
+    <section class="page-title" aria-labelledby="portfolio-heading">
+     <center><h1 id="portfolio-heading">Coding Projects</h1></center> 
+    </section>
 
-    <div class="card">
-        <div class="card-header"><center><img src="bike_logo.png"></center></div>
-        <div class="card-body hidden">
-          <h2>NYC Bike Alliance</h2>NYC Bike Alliance is a not-for-profit project I have spearhgeaded over the last year. The goal is to make NYC a safer and more accesbile city for bikers of all age and abiliites. (Project is in prodcution - please stay tuned)
-        </div>
-    </div>
-    
+    <section class="grid" aria-label="Portfolio Projects">
+      <article class="card">
+     
+         <figure>
+          <a href="https://splendid-seahorse-722b05.netlify.app" target="_blank" rel="noopener noreferrer">
+            <h2>Anthropos</h2> 
+          </a><img src="ant_logo.png" alt="Anthropos project logo" class="responsive-img" />
+        </figure>
+        <p>
+          Anthropos is a design-focused campaign that Jeffrey [Last Name] and I developed for our Multimedia Project Lab final. We focused on homelessness in New York City, conducting thorough research to identify contributing factors and proposing actionable solutions. The campaign offers resources to connect individuals in need with support and aims to raise awareness through thoughtful design.
+        </p>
+        <p>
+          <strong>Items created:</strong><br>
+          Logo and visuals: Adobe Illustrator & Photoshop<br>
+          Development: Replit<br>
+          Deployment: Netlify
+        </p>
+      </article>
 
-</section>
-  
+      <article class="card">
+    <figure>
+          <a href="https://deploy-preview-5--jocular-truffle-aa535c.netlify.app" target="_blank" rel="noopener noreferrer">
+            <h2>Sirius</h2>
+          </a>
+          <img src="sirius.png" alt="Sirius website preview" class="responsive-img" />
+        </figure>
+        <p>
+          Sirius is a website I designed and developed in an advanced Web Development course. It provides engaging educational content about the solar system, designed for users aged 14 to 100. The site allows curious minds to explore celestial objects, planetary facts, and more through an accessible and intuitive interface.
+        </p>
+      </article>
 
+      <article class="card">
+        <a href="https://josephhuckabee.com" target="_blank" rel="noopener noreferrer">
+            <h2>Hair Color Portfolio</h2> <figure>
+          <img src="hairport.png" alt="Hair color portfolio screenshot" class="responsive-img" />
+        
+        </figure>
+        <p>
+          This portfolio was created to showcase my work as a color and cutting specialist. It serves as a visual archive and creative journal, highlighting the tones, techniques, and transformations I create behind the chair. Designed to inspire and inform both peers and potential clients, it captures the essence of my artistic approach — from precision blonding and balayage to bold editorial work.
+        </p>
+      </article>
+    </section>
+  </main>
 
-    
-</main>
-  <footer>Copyrights</footer>
-  </div>
-      
+  <footer>
+    <p>&copy; Joseph Huckabee. All rights reserved.</p>
+  </footer>
 
   <script src="index.js"></script>
 </body>
