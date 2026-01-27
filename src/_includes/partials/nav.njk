@@ -3,7 +3,12 @@
     {% for item in site.nav %}
       {% set isCurrent = (page.url == item.url) %}
       <li>
-        <a href="{{ item.url }}" {% if isCurrent %}aria-current="page"{% endif %}>{{ item.label }}</a>
+        <a
+          href="{{ site.baseUrl }}{{ item.url }}"
+          {% if isCurrent %}aria-current="page"{% endif %}
+        >
+          {{ item.label }}
+        </a>
       </li>
     {% endfor %}
   </ul>
