@@ -14,7 +14,21 @@
   <meta property="og:description" content="Joseph Huckabee is a front end developer specializing in UX/UI design and data analytics.">
   <meta property="og:url" content="https://builtbyjoseph.com/">
   <meta property="og:site_name" content="Built by Joseph">
-  <link href="/assets/style.css" rel="stylesheet" type="text/css" />
+  
+    <meta property="og:image" content="https://builtbyjoseph.com/assets/headshot.jpeg">
+  
+  <link href="assets/style.css" rel="stylesheet" type="text/css" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Joseph Huckabee",
+      "url": "https://builtbyjoseph.com",
+      "jobTitle": "Front End Developer",
+      "homeLocation": "New York, NY",
+      "image": "https://builtbyjoseph.com/assets/headshot.jpeg"
+    }
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -23,24 +37,51 @@
     <nav role="navigation" aria-label="Main navigation">
   <ul>
     
+    
+      
+      
+        
       
       <li>
-        <a href="/" aria-current="page">home</a>
+        <a
+          href="./"
+          aria-current="page"
+        >
+          home
+        </a>
       </li>
     
       
+      
       <li>
-        <a href="/portfolio/" >coding</a>
+        <a
+          href="portfolio/"
+          
+        >
+          coding
+        </a>
       </li>
     
       
+      
       <li>
-        <a href="/logos/" >design</a>
+        <a
+          href="logos/"
+          
+        >
+          design
+        </a>
       </li>
     
       
+      
       <li>
-        <a href="/contact/" >contact</a>
+        <a
+          href="contact/"
+          
+        >
+          contact
+        </a>
       </li>
     
   </ul>
@@ -56,7 +97,6 @@
 
 <section class="heroGrid" role="region" aria-label="Introduction">
   <div class="blurb">
-    <h2 class="heroSubtitle">NYC <br> Front End Developer & Designer</h2>
     I am a digital designer who builds modern software tools for businesses.
     I help businesses bring their processes online through custom digital solutions, including UX and UI design, web and app development, data dashboards, and operational tools that make complex systems easier to understand, manage, and scale.
     <br><br>
@@ -64,9 +104,17 @@
     <br><br>
     I work closely with clients to understand their operations, priorities, and future direction. That understanding guides every design and development decision, resulting in digital systems that are tailored, adaptable, and aligned with real business goals. When your goals are clear, they guide the work we build together.
   </div>
-  <div>
-    <img src="/assets/headshot.jpeg" alt="Headshot of Joseph Huckabee">
-  </div>
+  <figure class="hero-figure">
+    <img
+      src="assets/headshot.jpeg"
+      alt="Headshot of Joseph Huckabee"
+      width="2378"
+      height="3240"
+      loading="eager"
+      decoding="async"
+    >
+    <figcaption class="hero-caption">NYC <br> Front End Developer & Designer</figcaption>
+  </figure>
 </section>
 <section class="grid grid-top">
   <div class="grid-item">
@@ -120,6 +168,7 @@
 </footer>
 
 
-  <script src="/assets/index.js"></script>
+  <script src="assets/index.js"></script>
+  
 </body>
 </html>

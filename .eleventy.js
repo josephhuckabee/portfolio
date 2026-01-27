@@ -1,5 +1,9 @@
 module.exports = function (eleventyConfig) {
   eleventyConfig.addGlobalData("baseUrl", "");
+  eleventyConfig.addFilter("stripLeadingSlash", function (url) {
+    if (!url) return "";
+    return url.replace(/^\//, "");
+  });
   eleventyConfig.addFilter("toRoot", function (pageUrl) {
     if (!pageUrl || pageUrl === "/") return "";
     const parts = pageUrl.split("/").filter(Boolean);
