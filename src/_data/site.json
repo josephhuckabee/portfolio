@@ -1,12 +1,3 @@
-{
-  "name": "Joseph Huckabee",
-  "siteName": "Built by Joseph",
-  "url": "https://builtbyjoseph.com",
-  "baseUrl": "",
-  "nav": [
-    { "label": "home", "url": "/" },
-    { "label": "coding", "url": "/portfolio/" },
-    { "label": "design", "url": "/logos/" },
-    { "label": "contact", "url": "/contact/" }
-  ]
-}
+---
+permalink: /coding/
+---
