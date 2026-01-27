@@ -39,7 +39,9 @@ module.exports = async (req, res) => {
     return;
   }
 
-  const name = body.name || `${body.fname || ""} ${body.lname || ""}`.trim();
+  const name =
+    body.name ||
+    `${body.firstName || body.fname || ""} ${body.lastName || body.lname || ""}`.trim();
   const email = body.email || "";
   const message = body.message || "New contact submission";
 
