@@ -1,5 +1,7 @@
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addGlobalData("baseUrl", "/portfolio");
+  const isNetlify = process.env.NETLIFY === "true";
+  const baseUrl = isNetlify ? "" : "/portfolio";
+  eleventyConfig.addGlobalData("baseUrl", baseUrl);
   eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
   eleventyConfig.addPassthroughCopy("src/CNAME");
 

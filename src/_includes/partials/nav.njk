@@ -3,7 +3,7 @@
     {% for item in site.nav %}
       <li>
         <a
-          href="{{ item.url }}"
+          href="{{ baseUrl }}{{ item.url }}"
           {% if page.url == item.url %}aria-current="page"{% endif %}
         >
           {{ item.label }}
