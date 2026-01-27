@@ -16,7 +16,7 @@
   {% if description %}<meta property="og:description" content="{{ description }}">{% endif %}
   <meta property="og:url" content="{{ canonicalUrl }}">
   <meta property="og:site_name" content="{{ site.siteName }}">
-  <link href="{{ baseUrl }}/assets/style.css" rel="stylesheet" type="text/css" />
+  <link href="{{ page.url | toRoot }}assets/style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -24,7 +24,7 @@
   <header role="banner">
     {% include "partials/nav.njk" %}
     {% if headerImage %}
-      <img src="{{ baseUrl }}/assets/{{ headerImage }}" alt="{{ headerImageAlt | default("Header image") }}">
+      <img src="{{ page.url | toRoot }}assets/{{ headerImage }}" alt="{{ headerImageAlt | default("Header image") }}">
     {% endif %}
   </header>
 
@@ -34,6 +34,6 @@
 
   {% include "partials/footer.njk" %}
 
-  <script src="{{ baseUrl }}/assets/index.js"></script>
+  <script src="{{ page.url | toRoot }}assets/index.js"></script>
 </body>
 </html>

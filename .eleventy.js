@@ -1,5 +1,10 @@
 module.exports = function (eleventyConfig) {
   eleventyConfig.addGlobalData("baseUrl", "");
+  eleventyConfig.addFilter("toRoot", function (pageUrl) {
+    if (!pageUrl || pageUrl === "/") return "";
+    const parts = pageUrl.split("/").filter(Boolean);
+    return "../".repeat(parts.length);
+  });
   eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
   eleventyConfig.addPassthroughCopy("src/CNAME");
 
