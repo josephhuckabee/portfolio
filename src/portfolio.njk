@@ -14,18 +14,18 @@ permalink: /portfolio/
   <article class="card">
     <h2>Anthropos</h2>
     <figure>
-      <a href="/projects/anthropos/">
+      <button class="project-card-trigger js-project-open" type="button" data-modal-target="project-anthropos">
         <img src="{{ page.url | toRoot }}assets/ant_logo.png" alt="Anthropos project logo" width="1554" height="404" loading="lazy" decoding="async" />
-      </a>
+      </button>
     </figure>
   </article>
 
   <article class="card">
     <h2>Sirius</h2>
     <figure>
-      <a href="/projects/sirius/">
+      <button class="project-card-trigger js-project-open" type="button" data-modal-target="project-sirius">
         <img src="{{ page.url | toRoot }}assets/sirius.png" alt="Sirius website preview" width="1363" height="656" loading="lazy" decoding="async" />
-      </a>
+      </button>
     </figure>
   </article>
   <article class="card">
@@ -40,9 +40,48 @@ permalink: /portfolio/
   <article class="card">
     <h2>Hair Color Portfolio</h2>
     <figure>
-      <a href="/projects/hair-color-portfolio/">
+      <button class="project-card-trigger js-project-open" type="button" data-modal-target="project-hair-color">
         <img src="{{ page.url | toRoot }}assets/hairport.png" alt="Hair color portfolio screenshot" width="1884" height="2194" loading="lazy" decoding="async" />
-      </a>
+      </button>
     </figure>
   </article>
 </section>
+
+<div class="project-modal" id="project-anthropos" aria-hidden="true">
+  <div class="project-modal__backdrop" data-modal-close></div>
+  <div class="project-modal__content" role="dialog" aria-modal="true" aria-labelledby="project-anthropos-title">
+    <button class="project-modal__close" type="button" data-modal-close>Close</button>
+    <h1 id="project-anthropos-title">Anthropos</h1>
+    <figure>
+      <img src="{{ page.url | toRoot }}assets/ant_logo.png" alt="Anthropos project logo" width="1554" height="404" loading="lazy" decoding="async" />
+    </figure>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel justo id augue luctus placerat.</p>
+    <p><a href="https://splendid-seahorse-722b05.netlify.app" target="_blank" rel="noopener noreferrer">External link</a></p>
+  </div>
+</div>
+
+<div class="project-modal" id="project-sirius" aria-hidden="true">
+  <div class="project-modal__backdrop" data-modal-close></div>
+  <div class="project-modal__content" role="dialog" aria-modal="true" aria-labelledby="project-sirius-title">
+    <button class="project-modal__close" type="button" data-modal-close>Close</button>
+    <h1 id="project-sirius-title">Sirius</h1>
+    <figure>
+      <img src="{{ page.url | toRoot }}assets/sirius.png" alt="Sirius website preview" width="1363" height="656" loading="lazy" decoding="async" />
+    </figure>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel justo id augue luctus placerat.</p>
+    <p><a href="https://deploy-preview-5--jocular-truffle-aa535c.netlify.app" target="_blank" rel="noopener noreferrer">External link</a></p>
+  </div>
+</div>
+
+<div class="project-modal" id="project-hair-color" aria-hidden="true">
+  <div class="project-modal__backdrop" data-modal-close></div>
+  <div class="project-modal__content" role="dialog" aria-modal="true" aria-labelledby="project-hair-color-title">
+    <button class="project-modal__close" type="button" data-modal-close>Close</button>
+    <h1 id="project-hair-color-title">Hair Color Portfolio</h1>
+    <figure>
+      <img src="{{ page.url | toRoot }}assets/hairport.png" alt="Hair color portfolio screenshot" width="1884" height="2194" loading="lazy" decoding="async" />
+    </figure>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel justo id augue luctus placerat.</p>
+    <p><a href="https://josephhuckabee.com" target="_blank" rel="noopener noreferrer">External link</a></p>
+  </div>
+</div>

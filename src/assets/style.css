@@ -337,6 +337,63 @@ p {
   line-height: 1.55;
 }
 
+.project-card-trigger {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+  display: inline-flex;
+  width: 100%;
+}
+
+.project-modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 3000;
+}
+
+.project-modal.is-open {
+  display: flex;
+}
+
+.project-modal__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.project-modal__content {
+  position: relative;
+  z-index: 1;
+  width: min(720px, 92vw);
+  max-height: 90vh;
+  overflow: auto;
+  background: #fff;
+  color: #000;
+  padding: 1.25rem;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.project-modal__close {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  border: 0;
+  background: transparent;
+  font-size: 0.95em;
+  cursor: pointer;
+}
+
+[data-theme="dark"] .project-modal__content {
+  background: #111;
+  color: #fff;
+  border-color: #333;
+}
+
 .portfolio-grid .card {
   max-height: 400px;
   overflow: hidden;
@@ -783,10 +840,12 @@ p {
 /* Footer */
 footer {
   text-align: center;
-  padding: 0.5rem var(--gap);
+  padding: 0.05rem 0;
   background: transparent;
   color: var(--color-text);
   margin-top: auto;
+  font-size: 0.85em;
+  line-height: 1.1;
 }
 
 .grid {

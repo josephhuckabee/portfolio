@@ -105,10 +105,11 @@
     </div>
   </div>
 
-  <form class="contact-form" method="POST" data-netlify="true" name="contact" aria-label="Contact form">
-    <input type="hidden" name="form-name" value="contact" />
+  <form class="contact-form" method="POST" action="/api/contact" name="contact" aria-label="Contact form">
     <fieldset>
       <legend>Contact Form</legend>
+      <label class="sr-only" for="website">Website</label>
+      <input type="text" id="website" name="website" autocomplete="off" tabindex="-1" aria-hidden="true" style="position:absolute;left:-9999px;" />
 
       <label for="fname">First Name</label>
       <input type="text" id="fname" name="fname" placeholder="First name" required />
@@ -119,7 +120,6 @@
       <label for="email">Email</label>
       <input type="email" id="email" name="email" placeholder="you@example.com" required />
 
-      <div data-netlify-recaptcha="true"></div>
       <button type="submit">Submit</button>
     </fieldset>
   </form>

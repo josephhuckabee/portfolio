@@ -174,7 +174,7 @@ document.addEventListener("DOMContentLoaded", () => {
   navBackdrop.setAttribute("aria-hidden", "true");
   navBackdrop.style.position = "fixed";
   navBackdrop.style.inset = "0";
-  navBackdrop.style.background = "rgba(255, 255, 255, 0.35)";
+  navBackdrop.style.background = "rgba(0, 0, 0, 0.9)";
   navBackdrop.style.backdropFilter = "blur(2px)";
   navBackdrop.style.display = "none";
   navBackdrop.style.zIndex = "1500";
@@ -340,7 +340,7 @@ document.addEventListener("DOMContentLoaded", () => {
     modalBackdrop.setAttribute("aria-hidden", "true");
     modalBackdrop.style.position = "fixed";
     modalBackdrop.style.inset = "0";
-    modalBackdrop.style.background = "rgba(255, 255, 255, 0.35)";
+    modalBackdrop.style.background = "rgba(0, 0, 0, 0.9)";
     modalBackdrop.style.display = "none";
     modalBackdrop.style.alignItems = "center";
     modalBackdrop.style.justifyContent = "center";
@@ -361,8 +361,8 @@ document.addEventListener("DOMContentLoaded", () => {
         <h2 id="contact-modal-title" style="margin:0;font-size:1.4rem;">Quick Contact</h2>
         <button type="button" class="js-contact-close" aria-label="Close" style="border-radius:6px;padding:0.25rem 0.5rem;cursor:pointer;">✕</button>
       </div>
-      <form name="contact" data-netlify="true" style="display:grid;gap:0.75rem;margin-top:1rem;">
-        <input type="hidden" name="form-name" value="contact">
+      <form name="contact" action="/api/contact" method="POST" style="display:grid;gap:0.75rem;margin-top:1rem;">
+        <input type="text" name="website" autocomplete="off" tabindex="-1" aria-hidden="true" style="position:absolute;left:-9999px;">
         <label style="font-weight:600;">Name
           <input name="name" type="text" required style="margin-top:0.35rem;width:100%;padding:0.55rem 0.7rem;border-radius:4px;">
         </label>
@@ -463,6 +463,44 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
+  const projectTriggers = document.querySelectorAll(".js-project-open");
+  const projectModals = document.querySelectorAll(".project-modal");
+
+  const closeProjectModal = (modal) => {
+    modal.classList.remove("is-open");
+    modal.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+  };
+
+  projectTriggers.forEach((trigger) => {
+    trigger.addEventListener("click", () => {
+      const targetId = trigger.getAttribute("data-modal-target");
+      const modal = document.getElementById(targetId);
+      if (!modal) return;
+      modal.classList.add("is-open");
+      modal.setAttribute("aria-hidden", "false");
+      document.body.style.overflow = "hidden";
+    });
+  });
+
+  projectModals.forEach((modal) => {
+    modal.addEventListener("click", (event) => {
+      if (event.target.matches("[data-modal-close]")) {
+        closeProjectModal(modal);
+      }
+    });
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      projectModals.forEach((modal) => {
+        if (modal.classList.contains("is-open")) {
+          closeProjectModal(modal);
+        }
+      });
+    }
+  });
+
   document.querySelectorAll(".js-contact-btn").forEach((btn) => {
     btn.addEventListener("click", (event) => {
       event.preventDefault();
@@ -489,7 +527,8 @@ document.addEventListener("DOMContentLoaded", () => {
         const action = contactForm.getAttribute("action") || window.location.pathname;
         const response = await fetch(action, {
           method: "POST",
-          body: formData
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: new URLSearchParams(formData).toString()
         });
         if (response.ok) {
           notice.textContent = "Thanks! Your message has been submitted.";
@@ -522,7 +561,8 @@ document.addEventListener("DOMContentLoaded", () => {
         const action = modalForm.getAttribute("action") || window.location.pathname;
         const response = await fetch(action, {
           method: "POST",
-          body: formData
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: new URLSearchParams(formData).toString()
         });
         if (response.ok) {
           notice.textContent = "Thanks! Your message has been submitted.";
