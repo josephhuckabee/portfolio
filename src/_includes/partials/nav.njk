@@ -1,11 +1,10 @@
 <nav role="navigation" aria-label="Main navigation">
   <ul>
     {% for item in site.nav %}
-      {% set isCurrent = (page.url == item.url) %}
       <li>
         <a
-          href="{{ site.baseUrl }}{{ item.url }}"
-          {% if isCurrent %}aria-current="page"{% endif %}
+          href="{{ item.url }}"
+          {% if page.url == item.url %}aria-current="page"{% endif %}
         >
           {{ item.label }}
         </a>
