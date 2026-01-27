@@ -19,6 +19,9 @@
   {% if site.ogImage %}
     <meta property="og:image" content="{{ site.url }}/{{ site.ogImage }}">
   {% endif %}
+  {% if page.url == "/404.html" %}
+    <meta name="robots" content="noindex, nofollow">
+  {% endif %}
   <link href="{{ page.url | toRoot }}assets/style.css" rel="stylesheet" type="text/css" />
   <script type="application/ld+json">
     {
