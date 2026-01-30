@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ title }}</title>
+  {% if description %}<meta name="description" content="{{ description }}">{% endif %}
+  {% set canonicalUrl = canonical or (site.url + page.url) %}
+  <link rel="canonical" href="{{ canonicalUrl }}">
+  <meta property="og:type" content="website">
+  {% if ogTitle %}
+    <meta property="og:title" content="{{ ogTitle }}">
+  {% else %}
+    <meta property="og:title" content="{{ title }}">
+  {% endif %}
+  {% if description %}<meta property="og:description" content="{{ description }}">{% endif %}
+  <meta property="og:url" content="{{ canonicalUrl }}">
+  <meta property="og:site_name" content="{{ site.siteName }}">
+  {% if site.ogImage %}
+    <meta property="og:image" content="{{ site.url }}/{{ site.ogImage }}">
+  {% endif %}
+  {% if page.url == "/404.html" %}
+    <meta name="robots" content="noindex, nofollow">
+  {% endif %}
+  <link href="{{ page.url | toRoot }}assets/style.css" rel="stylesheet" type="text/css" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "{{ site.name }}",
+      "url": "{{ site.url }}",
+      "jobTitle": "Front-End Developer",
+      "homeLocation": "{{ site.location }}",
+      "image": "{{ site.url }}/{{ site.ogImage }}"
+    }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header role="banner">
+    {% include "partials/nav.njk" %}
+    {% if headerImage %}
+      <img src="{{ page.url | toRoot }}assets/{{ headerImage }}" alt="{{ headerImageAlt | default("Header image") }}" loading="lazy" decoding="async">
+    {% endif %}
+  </header>
+
+  <main id="main" role="main">
+    {{ content | safe }}
+  </main>
+
+  {% include "partials/footer.njk" %}
+
+  <script src="{{ page.url | toRoot }}assets/index.js"></script>
+  {% if site.analyticsDomain %}
+    <script defer data-domain="{{ site.analyticsDomain }}" src="https://plausible.io/js/script.js"></script>
+  {% endif %}
+</body>
+</html>
