@@ -378,6 +378,19 @@ p {
   border: 1px solid rgba(0, 0, 0, 0.12);
 }
 
+.project-modal__content a {
+  color: #0b5fff;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
+.project-modal__content a:hover,
+.project-modal__content a:focus {
+  color: #003fc7;
+}
+
 .project-modal__close {
   position: absolute;
   top: 0.75rem;
@@ -392,6 +405,15 @@ p {
   background: #111;
   color: #fff;
   border-color: #333;
+}
+
+[data-theme="dark"] .project-modal__content a {
+  color: #6bb0ff;
+}
+
+[data-theme="dark"] .project-modal__content a:hover,
+[data-theme="dark"] .project-modal__content a:focus {
+  color: #9ac7ff;
 }
 
 .portfolio-grid .card {
