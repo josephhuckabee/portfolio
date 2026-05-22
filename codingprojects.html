@@ -112,14 +112,32 @@
 
 <section class="portfolio-grid" aria-label="Coding projects">
   <article class="project-card">
-    <button class="project-card-trigger js-project-open" type="button" data-modal-target="project-anthropos" aria-haspopup="dialog">
+    <button class="project-card-trigger js-project-open" type="button" data-modal-target="project-historical-glass" aria-haspopup="dialog">
       <span class="project-card__media">
-        <img src="ant_logo.png" alt="Anthropos project logo" width="1554" height="404" loading="lazy" decoding="async">
+        <img src="hgmf_logo.png" alt="Historical Glass Museum Foundation logo" width="590" height="247" loading="lazy" decoding="async">
       </span>
       <span class="project-card__body">
-        <span class="project-card__kicker">Civic tech</span>
-        <span class="project-card__title">Anthropos</span>
-        <span class="project-card__copy">Housing crisis storytelling with data highlights, petition tools, and local district lookup.</span>
+        <span class="project-card__kicker">Cultural web</span>
+        <span class="project-card__title">Historical Glass Museum</span>
+        <span class="project-card__copy">A refined museum website built to present collections, visitor details, and historical storytelling clearly.</span>
+        <span class="project-card__tags" aria-label="Project technologies">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+        </span>
+      </span>
+    </button>
+  </article>
+
+  <article class="project-card">
+    <button class="project-card-trigger js-project-open" type="button" data-modal-target="project-hair-color" aria-haspopup="dialog">
+      <span class="project-card__media">
+        <img src="hairport.png" alt="Hair color portfolio screenshot" width="1884" height="900" loading="lazy" decoding="async">
+      </span>
+      <span class="project-card__body">
+        <span class="project-card__kicker">Portfolio system</span>
+        <span class="project-card__title">Hair Color Portfolio</span>
+        <span class="project-card__copy">A client-friendly beauty portfolio with image-forward browsing and streamlined presentation.</span>
         <span class="project-card__tags" aria-label="Project technologies">
           <span>HTML</span>
           <span>CSS</span>
@@ -148,32 +166,14 @@
   </article>
 
   <article class="project-card">
-    <button class="project-card-trigger js-project-open" type="button" data-modal-target="project-historical-glass" aria-haspopup="dialog">
+    <button class="project-card-trigger js-project-open" type="button" data-modal-target="project-anthropos" aria-haspopup="dialog">
       <span class="project-card__media">
-        <img src="hgmf_logo.png" alt="Historical Glass Museum Foundation logo" width="590" height="247" loading="lazy" decoding="async">
+        <img src="ant_logo.png" alt="Anthropos project logo" width="1554" height="404" loading="lazy" decoding="async">
       </span>
       <span class="project-card__body">
-        <span class="project-card__kicker">Cultural web</span>
-        <span class="project-card__title">Historical Glass Museum</span>
-        <span class="project-card__copy">A refined museum website built to present collections, visitor details, and historical storytelling clearly.</span>
-        <span class="project-card__tags" aria-label="Project technologies">
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>JavaScript</span>
-        </span>
-      </span>
-    </button>
-  </article>
-
-  <article class="project-card">
-    <button class="project-card-trigger js-project-open" type="button" data-modal-target="project-hair-color" aria-haspopup="dialog">
-      <span class="project-card__media">
-        <img src="hairport.png" alt="Hair color portfolio screenshot" width="1884" height="2194" loading="lazy" decoding="async">
-      </span>
-      <span class="project-card__body">
-        <span class="project-card__kicker">Portfolio system</span>
-        <span class="project-card__title">Hair Color Portfolio</span>
-        <span class="project-card__copy">A client-friendly beauty portfolio with image-forward browsing and streamlined presentation.</span>
+        <span class="project-card__kicker">Civic tech</span>
+        <span class="project-card__title">Anthropos</span>
+        <span class="project-card__copy">Housing crisis storytelling with data highlights, petition tools, and local district lookup.</span>
         <span class="project-card__tags" aria-label="Project technologies">
           <span>HTML</span>
           <span>CSS</span>
@@ -183,42 +183,6 @@
     </button>
   </article>
 </section>
-
-<div class="project-modal" id="project-anthropos" aria-hidden="true">
-  <div class="project-modal__backdrop" data-modal-close></div>
-  <section class="project-modal__content" role="dialog" aria-modal="true" aria-labelledby="project-anthropos-title" tabindex="-1">
-    <button class="project-modal__close" type="button" data-modal-close aria-label="Close project details">Close</button>
-    <p class="eyebrow">Civic tech</p>
-    <h2 id="project-anthropos-title">Anthropos</h2>
-    <figure class="project-modal__figure">
-      <img src="ant_logo.png" alt="Anthropos project logo" width="1554" height="404" loading="lazy" decoding="async">
-    </figure>
-    <div class="project-modal__details">
-      <p>A civic-focused project about the post-COVID housing crisis, featuring data highlights, a petition to elected officials, and an interactive district locator.</p>
-      <p><strong>Case study:</strong> Built to inform and mobilize action on NYC housing issues with clear stats, a streamlined petition flow, and district-based outreach tools.</p>
-      <p><strong>Stack:</strong> HTML, CSS, JavaScript</p>
-      <a class="project-link" href="https://splendid-seahorse-722b05.netlify.app" target="_blank" rel="noopener noreferrer">Visit project</a>
-    </div>
-  </section>
-</div>
-
-<div class="project-modal" id="project-sirius" aria-hidden="true">
-  <div class="project-modal__backdrop" data-modal-close></div>
-  <section class="project-modal__content" role="dialog" aria-modal="true" aria-labelledby="project-sirius-title" tabindex="-1">
-    <button class="project-modal__close" type="button" data-modal-close aria-label="Close project details">Close</button>
-    <p class="eyebrow">Editorial web app</p>
-    <h2 id="project-sirius-title">Sirius</h2>
-    <figure class="project-modal__figure">
-      <img src="sirius.png" alt="Sirius website preview" width="1363" height="656" loading="lazy" decoding="async">
-    </figure>
-    <div class="project-modal__details">
-      <p>A space-focused site that automatically publishes science news using a custom data pipeline and editorial filtering.</p>
-      <p><strong>Case study:</strong> Built as a visual hub for space exploration with automated science updates, clean storytelling, and a fast, image-forward layout.</p>
-      <p><strong>Stack:</strong> HTML, CSS, JavaScript</p>
-      <a class="project-link" href="https://sirius2-0.vercel.app" target="_blank" rel="noopener noreferrer">Visit project</a>
-    </div>
-  </section>
-</div>
 
 <div class="project-modal" id="project-historical-glass" aria-hidden="true">
   <div class="project-modal__backdrop" data-modal-close></div>
@@ -245,13 +209,49 @@
     <p class="eyebrow">Portfolio system</p>
     <h2 id="project-hair-color-title">Hair Color Portfolio</h2>
     <figure class="project-modal__figure">
-      <img src="hairport.png" alt="Hair color portfolio screenshot" width="1884" height="2194" loading="lazy" decoding="async">
+      <img src="hairport.png" alt="Hair color portfolio screenshot" width="1884" height="900" loading="lazy" decoding="async">
     </figure>
     <div class="project-modal__details">
       <p>JosephHuckabee.com is a hair portfolio showcasing signature work and a clean, client-friendly presentation.</p>
       <p><strong>Case study:</strong> Built to present hair artistry with strong visuals and a straightforward path for prospective clients.</p>
       <p><strong>Stack:</strong> HTML, CSS, JavaScript</p>
       <a class="project-link" href="https://josephhuckabee.com" target="_blank" rel="noopener noreferrer">Visit project</a>
+    </div>
+  </section>
+</div>
+
+<div class="project-modal" id="project-sirius" aria-hidden="true">
+  <div class="project-modal__backdrop" data-modal-close></div>
+  <section class="project-modal__content" role="dialog" aria-modal="true" aria-labelledby="project-sirius-title" tabindex="-1">
+    <button class="project-modal__close" type="button" data-modal-close aria-label="Close project details">Close</button>
+    <p class="eyebrow">Editorial web app</p>
+    <h2 id="project-sirius-title">Sirius</h2>
+    <figure class="project-modal__figure">
+      <img src="sirius.png" alt="Sirius website preview" width="1363" height="656" loading="lazy" decoding="async">
+    </figure>
+    <div class="project-modal__details">
+      <p>A space-focused site that automatically publishes science news using a custom data pipeline and editorial filtering.</p>
+      <p><strong>Case study:</strong> Built as a visual hub for space exploration with automated science updates, clean storytelling, and a fast, image-forward layout.</p>
+      <p><strong>Stack:</strong> HTML, CSS, JavaScript</p>
+      <a class="project-link" href="https://sirius2-0.vercel.app" target="_blank" rel="noopener noreferrer">Visit project</a>
+    </div>
+  </section>
+</div>
+
+<div class="project-modal" id="project-anthropos" aria-hidden="true">
+  <div class="project-modal__backdrop" data-modal-close></div>
+  <section class="project-modal__content" role="dialog" aria-modal="true" aria-labelledby="project-anthropos-title" tabindex="-1">
+    <button class="project-modal__close" type="button" data-modal-close aria-label="Close project details">Close</button>
+    <p class="eyebrow">Civic tech</p>
+    <h2 id="project-anthropos-title">Anthropos</h2>
+    <figure class="project-modal__figure">
+      <img src="ant_logo.png" alt="Anthropos project logo" width="1554" height="404" loading="lazy" decoding="async">
+    </figure>
+    <div class="project-modal__details">
+      <p>A civic-focused project about the post-COVID housing crisis, featuring data highlights, a petition to elected officials, and an interactive district locator.</p>
+      <p><strong>Case study:</strong> Built to inform and mobilize action on NYC housing issues with clear stats, a streamlined petition flow, and district-based outreach tools.</p>
+      <p><strong>Stack:</strong> HTML, CSS, JavaScript</p>
+      <a class="project-link" href="https://splendid-seahorse-722b05.netlify.app" target="_blank" rel="noopener noreferrer">Visit project</a>
     </div>
   </section>
 </div>
