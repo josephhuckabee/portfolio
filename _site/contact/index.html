@@ -5,6 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact | Joseph Huckabee</title>
   <meta name="description" content="Contact Joseph Huckabee for front-end development, UX/UI, and data analytics projects.">
+  <meta name="author" content="Joseph Huckabee">
+  <meta name="theme-color" content="#f6f1e8">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:image:alt" content="Portrait of Joseph Huckabee, front-end developer and digital designer">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Contact | Joseph Huckabee">
+  <meta name="twitter:description" content="Contact Joseph Huckabee for front-end development, UX/UI, and data analytics projects.">
+  <meta name="twitter:image" content="https://builtbyjoseph.com/assets/headshot.jpeg">
   
   <link rel="canonical" href="https://builtbyjoseph.com/contact/">
   <meta property="og:type" content="website">
@@ -25,9 +33,11 @@
       "@type": "Person",
       "name": "Joseph Huckabee",
       "url": "https://builtbyjoseph.com",
-      "jobTitle": "Front-End Developer",
+      "jobTitle": "Front-End Developer and Digital Designer",
       "homeLocation": "New York, NY",
-      "image": "https://builtbyjoseph.com/assets/headshot.jpeg"
+      "image": "https://builtbyjoseph.com/assets/headshot.jpeg",
+      "knowsAbout": ["front-end development", "UX/UI design", "JavaScript", "HTML", "CSS", "brand identity", "data analytics", "accessible web design"],
+      "description": "Joseph Huckabee builds modern, accessible websites, portfolios, brand systems, and digital tools for businesses."
     }
   </script>
 </head>
@@ -108,8 +118,10 @@
       <legend>Contact Form</legend>
       <label class="sr-only" for="website">Website</label>
       <input type="text" id="website" name="website" autocomplete="off" tabindex="-1" aria-hidden="true" style="position:absolute;left:-9999px;" />
-      <input type="text" id="fname" name="firstName" placeholder="First name" required />
-      <input type="text" id="lname" name="lastName" placeholder="Last name" required />
+      <label for="fname">First name</label>
+      <input type="text" id="fname" name="firstName" placeholder="First name" autocomplete="given-name" required />
+      <label for="lname">Last name</label>
+      <input type="text" id="lname" name="lastName" placeholder="Last name" autocomplete="family-name" required />
       <label for="email">Email</label>
       <input type="email" id="email" name="email" placeholder="you@example.com" required />
 

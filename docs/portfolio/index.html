@@ -4,17 +4,42 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Coding Portfolio | Joseph Huckabee</title>
-  <meta name="description" content="Coding projects by Joseph Huckabee, a front end developer focused on UX/UI and data analytics.">
+  <meta name="description" content="Coding projects by Joseph Huckabee, a front-end developer focused on UX/UI and data analytics.">
+  <meta name="author" content="Joseph Huckabee">
+  <meta name="theme-color" content="#f6f1e8">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:image:alt" content="Portrait of Joseph Huckabee, front-end developer and digital designer">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Coding Portfolio | Joseph Huckabee">
+  <meta name="twitter:description" content="Coding projects by Joseph Huckabee, a front-end developer focused on UX/UI and data analytics.">
+  <meta name="twitter:image" content="https://builtbyjoseph.com/assets/headshot.jpeg">
   
   <link rel="canonical" href="https://builtbyjoseph.com/portfolio/">
   <meta property="og:type" content="website">
   
     <meta property="og:title" content="Coding Portfolio | Joseph Huckabee">
   
-  <meta property="og:description" content="Coding projects by Joseph Huckabee, a front end developer focused on UX/UI and data analytics.">
+  <meta property="og:description" content="Coding projects by Joseph Huckabee, a front-end developer focused on UX/UI and data analytics.">
   <meta property="og:url" content="https://builtbyjoseph.com/portfolio/">
-  <meta property="og:site_name" content="">
-  <link href="/assets/style.css" rel="stylesheet" type="text/css" />
+  <meta property="og:site_name" content="Built by Joseph">
+  
+    <meta property="og:image" content="https://builtbyjoseph.com/assets/headshot.jpeg">
+  
+  
+  <link href="../assets/style.css" rel="stylesheet" type="text/css" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Joseph Huckabee",
+      "url": "https://builtbyjoseph.com",
+      "jobTitle": "Front-End Developer and Digital Designer",
+      "homeLocation": "New York, NY",
+      "image": "https://builtbyjoseph.com/assets/headshot.jpeg",
+      "knowsAbout": ["front-end development", "UX/UI design", "JavaScript", "HTML", "CSS", "brand identity", "data analytics", "accessible web design"],
+      "description": "Joseph Huckabee builds modern, accessible websites, portfolios, brand systems, and digital tools for businesses."
+    }
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -23,36 +48,47 @@
     <nav role="navigation" aria-label="Main navigation">
   <ul>
     
+    
+      
+      
+        
+      
       <li>
         <a
-          href="/portfolio/"
+          href="../"
           
         >
           home
         </a>
       </li>
     
+      
+      
       <li>
         <a
-          href="/portfolio/portfolio/"
+          href="../portfolio/"
           aria-current="page"
         >
           coding
         </a>
       </li>
     
+      
+      
       <li>
         <a
-          href="/portfolio/logos/"
+          href="../logos/"
           
         >
           design
         </a>
       </li>
     
+      
+      
       <li>
         <a
-          href="/portfolio/contact/"
+          href="../contact/"
           
         >
           contact
@@ -66,61 +102,167 @@
   </header>
 
   <main id="main" role="main">
-    <section aria-labelledby="portfolio-heading">
-  <h1 id="portfolio-heading">Coding Projects</h1>
+    <section class="portfolio-hero" aria-labelledby="portfolio-heading">
+  <p class="eyebrow">Selected builds</p>
+  <h1 id="portfolio-heading">Coding with taste, polish, and a little bite.</h1>
+  <p class="portfolio-hero__lede">
+    Front-end projects built around sharp visuals, clean interaction patterns, and tools that make complicated ideas easier to use.
+  </p>
 </section>
 
-<section class="grid" aria-label="Portfolio Projects">
-  <article class="card">
-    <h2>Anthropos</h2>
-    <figure>
-      <a href="https://splendid-seahorse-722b05.netlify.app" target="_blank" rel="noopener noreferrer">
-        <img src="/portfolio/assets/ant_logo.png" alt="Anthropos project logo" />
-      </a>
-    </figure>
-    <p>
-      Anthropos is a design-focused campaign that Jeffrey [Last Name] and I developed for our Multimedia Project Lab final. We focused on homelessness in New York City, conducting thorough research to identify contributing factors and proposing actionable solutions. The campaign offers resources to connect individuals in need with support and aims to raise awareness through thoughtful design.
-    </p>
-    <p>
-      <strong>Items created:</strong><br>
-      Logo and visuals: Adobe Illustrator & Photoshop<br>
-      Development: Replit<br>
-      Deployment: Netlify
-    </p>
+<section class="portfolio-grid" aria-label="Coding projects">
+  <article class="project-card">
+    <button class="project-card-trigger js-project-open" type="button" data-modal-target="project-anthropos" aria-haspopup="dialog">
+      <span class="project-card__media">
+        <img src="../assets/ant_logo.png" alt="Anthropos project logo" width="1554" height="404" loading="lazy" decoding="async">
+      </span>
+      <span class="project-card__body">
+        <span class="project-card__kicker">Civic tech</span>
+        <span class="project-card__title">Anthropos</span>
+        <span class="project-card__copy">Housing crisis storytelling with data highlights, petition tools, and local district lookup.</span>
+        <span class="project-card__tags" aria-label="Project technologies">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+        </span>
+      </span>
+    </button>
   </article>
 
-  <article class="card">
-    <h2>Sirius</h2>
-    <figure>
-      <a href="https://deploy-preview-5--jocular-truffle-aa535c.netlify.app" target="_blank" rel="noopener noreferrer">
-        <img src="/portfolio/assets/sirius.png" alt="Sirius website preview" />
-      </a>
-    </figure>
-    <p>
-      Sirius is a website I designed and developed in an advanced Web Development course. It provides engaging educational content about the solar system, designed for users aged 14 to 100. The site allows curious minds to explore celestial objects, planetary facts, and more through an accessible and intuitive interface.
-    </p>
+  <article class="project-card">
+    <button class="project-card-trigger js-project-open" type="button" data-modal-target="project-sirius" aria-haspopup="dialog">
+      <span class="project-card__media">
+        <img src="../assets/sirius.png" alt="Sirius website preview" width="1363" height="656" loading="lazy" decoding="async">
+      </span>
+      <span class="project-card__body">
+        <span class="project-card__kicker">Editorial web app</span>
+        <span class="project-card__title">Sirius</span>
+        <span class="project-card__copy">A space news hub with automated content flow, visual hierarchy, and fast browsing.</span>
+        <span class="project-card__tags" aria-label="Project technologies">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+        </span>
+      </span>
+    </button>
   </article>
 
-  <article class="card">
-    <h2>Hair Color Portfolio</h2>
-    <figure>
-      <a href="https://josephhuckabee.com" target="_blank" rel="noopener noreferrer">
-        <img src="/portfolio/assets/hairport.png" alt="Hair color portfolio screenshot" />
-      </a>
-    </figure>
-    <p>
-      This portfolio was created to showcase my work as a color and cutting specialist. It serves as a visual archive and creative journal, highlighting the tones, techniques, and transformations I create behind the chair. Designed to inspire and inform both peers and potential clients, it captures the essence of my artistic approach — from precision blonding and balayage to bold editorial work.
-    </p>
+  <article class="project-card">
+    <button class="project-card-trigger js-project-open" type="button" data-modal-target="project-historical-glass" aria-haspopup="dialog">
+      <span class="project-card__media">
+        <img src="../assets/hgmf_logo.png" alt="Historical Glass Museum Foundation logo" width="590" height="247" loading="lazy" decoding="async">
+      </span>
+      <span class="project-card__body">
+        <span class="project-card__kicker">Cultural web</span>
+        <span class="project-card__title">Historical Glass Museum</span>
+        <span class="project-card__copy">A refined museum website built to present collections, visitor details, and historical storytelling clearly.</span>
+        <span class="project-card__tags" aria-label="Project technologies">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+        </span>
+      </span>
+    </button>
+  </article>
+
+  <article class="project-card">
+    <button class="project-card-trigger js-project-open" type="button" data-modal-target="project-hair-color" aria-haspopup="dialog">
+      <span class="project-card__media">
+        <img src="../assets/hairport.png" alt="Hair color portfolio screenshot" width="1884" height="2194" loading="lazy" decoding="async">
+      </span>
+      <span class="project-card__body">
+        <span class="project-card__kicker">Portfolio system</span>
+        <span class="project-card__title">Hair Color Portfolio</span>
+        <span class="project-card__copy">A client-friendly beauty portfolio with image-forward browsing and streamlined presentation.</span>
+        <span class="project-card__tags" aria-label="Project technologies">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+        </span>
+      </span>
+    </button>
   </article>
 </section>
+
+<div class="project-modal" id="project-anthropos" aria-hidden="true">
+  <div class="project-modal__backdrop" data-modal-close></div>
+  <section class="project-modal__content" role="dialog" aria-modal="true" aria-labelledby="project-anthropos-title" tabindex="-1">
+    <button class="project-modal__close" type="button" data-modal-close aria-label="Close project details">Close</button>
+    <p class="eyebrow">Civic tech</p>
+    <h2 id="project-anthropos-title">Anthropos</h2>
+    <figure class="project-modal__figure">
+      <img src="../assets/ant_logo.png" alt="Anthropos project logo" width="1554" height="404" loading="lazy" decoding="async">
+    </figure>
+    <div class="project-modal__details">
+      <p>A civic-focused project about the post-COVID housing crisis, featuring data highlights, a petition to elected officials, and an interactive district locator.</p>
+      <p><strong>Case study:</strong> Built to inform and mobilize action on NYC housing issues with clear stats, a streamlined petition flow, and district-based outreach tools.</p>
+      <p><strong>Stack:</strong> HTML, CSS, JavaScript</p>
+      <a class="project-link" href="https://splendid-seahorse-722b05.netlify.app" target="_blank" rel="noopener noreferrer">Visit project</a>
+    </div>
+  </section>
+</div>
+
+<div class="project-modal" id="project-sirius" aria-hidden="true">
+  <div class="project-modal__backdrop" data-modal-close></div>
+  <section class="project-modal__content" role="dialog" aria-modal="true" aria-labelledby="project-sirius-title" tabindex="-1">
+    <button class="project-modal__close" type="button" data-modal-close aria-label="Close project details">Close</button>
+    <p class="eyebrow">Editorial web app</p>
+    <h2 id="project-sirius-title">Sirius</h2>
+    <figure class="project-modal__figure">
+      <img src="../assets/sirius.png" alt="Sirius website preview" width="1363" height="656" loading="lazy" decoding="async">
+    </figure>
+    <div class="project-modal__details">
+      <p>A space-focused site that automatically publishes science news using a custom data pipeline and editorial filtering.</p>
+      <p><strong>Case study:</strong> Built as a visual hub for space exploration with automated science updates, clean storytelling, and a fast, image-forward layout.</p>
+      <p><strong>Stack:</strong> HTML, CSS, JavaScript</p>
+      <a class="project-link" href="https://sirius2-0.vercel.app" target="_blank" rel="noopener noreferrer">Visit project</a>
+    </div>
+  </section>
+</div>
+
+<div class="project-modal" id="project-historical-glass" aria-hidden="true">
+  <div class="project-modal__backdrop" data-modal-close></div>
+  <section class="project-modal__content" role="dialog" aria-modal="true" aria-labelledby="project-historical-glass-title" tabindex="-1">
+    <button class="project-modal__close" type="button" data-modal-close aria-label="Close project details">Close</button>
+    <p class="eyebrow">Cultural web</p>
+    <h2 id="project-historical-glass-title">Historical Glass Museum</h2>
+    <figure class="project-modal__figure">
+      <img src="../assets/hgmf_logo.png" alt="Historical Glass Museum Foundation logo" width="590" height="247" loading="lazy" decoding="async">
+    </figure>
+    <div class="project-modal__details">
+      <p>A museum website designed to make collection highlights, visitor information, and historical context easy to explore.</p>
+      <p><strong>Case study:</strong> Built with a polished static front end, clear navigation, responsive presentation, and a visual style that respects the museum subject matter.</p>
+      <p><strong>Stack:</strong> HTML, CSS, JavaScript</p>
+    </div>
+  </section>
+</div>
+
+<div class="project-modal" id="project-hair-color" aria-hidden="true">
+  <div class="project-modal__backdrop" data-modal-close></div>
+  <section class="project-modal__content" role="dialog" aria-modal="true" aria-labelledby="project-hair-color-title" tabindex="-1">
+    <button class="project-modal__close" type="button" data-modal-close aria-label="Close project details">Close</button>
+    <p class="eyebrow">Portfolio system</p>
+    <h2 id="project-hair-color-title">Hair Color Portfolio</h2>
+    <figure class="project-modal__figure">
+      <img src="../assets/hairport.png" alt="Hair color portfolio screenshot" width="1884" height="2194" loading="lazy" decoding="async">
+    </figure>
+    <div class="project-modal__details">
+      <p>JosephHuckabee.com is a hair portfolio showcasing signature work and a clean, client-friendly presentation.</p>
+      <p><strong>Case study:</strong> Built to present hair artistry with strong visuals and a straightforward path for prospective clients.</p>
+      <p><strong>Stack:</strong> HTML, CSS, JavaScript</p>
+      <a class="project-link" href="https://josephhuckabee.com" target="_blank" rel="noopener noreferrer">Visit project</a>
+    </div>
+  </section>
+</div>
 
   </main>
 
   <footer role="contentinfo">
-  <p>&copy; . All rights reserved.</p>
+  <p>&copy; Joseph Huckabee. All rights reserved.</p>
 </footer>
 
 
-  <script src="/assets/index.js"></script>
+  <script src="../assets/index.js"></script>
+  
 </body>
 </html>

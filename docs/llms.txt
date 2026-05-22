@@ -1,0 +1,21 @@
+# Built by Joseph
+
+Joseph Huckabee is a New York-based front-end developer and digital designer focused on accessible HTML, CSS, JavaScript, UX/UI design, brand identity, data analytics, and business-facing digital tools.
+
+## Key Pages
+
+- Home: https://builtbyjoseph.com/
+- Coding portfolio: https://builtbyjoseph.com/portfolio/
+- Design and logo work: https://builtbyjoseph.com/logos/
+- Contact: https://builtbyjoseph.com/contact/
+
+## Featured Work
+
+- Anthropos: civic housing project using HTML, CSS, and JavaScript.
+- Sirius: editorial space-news project using HTML, CSS, and JavaScript.
+- Historical Glass Museum: museum web project using HTML, CSS, and JavaScript.
+- Hair Color Portfolio: client-facing visual portfolio using HTML, CSS, and JavaScript.
+
+## Contact
+
+Use https://builtbyjoseph.com/contact/ for project inquiries.
