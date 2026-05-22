@@ -57,6 +57,17 @@ CONTACT_FROM_EMAIL
 
 If the site is hosted on a static-only service such as GitHub Pages, the contact form endpoint will not run. Use a serverless host such as Vercel, or replace the form with a static mail link.
 
+## Vercel Deployment
+
+This repo includes `vercel.json` so Vercel serves the project root directly. In the Vercel dashboard, keep the project settings simple:
+
+- Framework Preset: Other
+- Build Command: empty
+- Output Directory: `.`
+- Install Command: empty
+
+If CSS is missing after deploy, check that Vercel is not still using an old output directory such as `docs` or `_site`, then redeploy without build cache.
+
 ## Accessibility and Performance Notes
 
 - Pages include semantic landmarks, labels, skip links, and descriptive image alt text.
