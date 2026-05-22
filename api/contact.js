@@ -31,7 +31,7 @@ module.exports = async (req, res) => {
   const body = await parseBody(req);
   if (body.website) {
     if (wantsHtml) {
-      res.writeHead(303, { Location: "/contact/?status=sent" });
+      res.writeHead(303, { Location: "/contact.html?status=sent" });
       res.end();
       return;
     }
@@ -47,7 +47,7 @@ module.exports = async (req, res) => {
 
   if (!email) {
     if (wantsHtml) {
-      res.writeHead(303, { Location: "/contact/?status=error" });
+      res.writeHead(303, { Location: "/contact.html?status=error" });
       res.end();
       return;
     }
@@ -61,7 +61,7 @@ module.exports = async (req, res) => {
 
   if (!apiKey || !toEmail || !fromEmail) {
     if (wantsHtml) {
-      res.writeHead(303, { Location: "/contact/?status=error" });
+      res.writeHead(303, { Location: "/contact.html?status=error" });
       res.end();
       return;
     }
@@ -96,7 +96,7 @@ module.exports = async (req, res) => {
     if (!response.ok) {
       const errorText = await response.text();
       if (wantsHtml) {
-        res.writeHead(303, { Location: "/contact/?status=error" });
+        res.writeHead(303, { Location: "/contact.html?status=error" });
         res.end();
         return;
       }
@@ -105,14 +105,14 @@ module.exports = async (req, res) => {
     }
 
     if (wantsHtml) {
-      res.writeHead(303, { Location: "/contact/?status=sent" });
+      res.writeHead(303, { Location: "/contact.html?status=sent" });
       res.end();
       return;
     }
     res.status(200).json({ ok: true });
   } catch (error) {
     if (wantsHtml) {
-      res.writeHead(303, { Location: "/contact/?status=error" });
+      res.writeHead(303, { Location: "/contact.html?status=error" });
       res.end();
       return;
     }

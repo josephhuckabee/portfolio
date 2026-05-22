@@ -212,11 +212,9 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!link) return;
 
     const href = link.getAttribute("href") || "";
-    const isContactLink = link.classList.contains("js-contact-btn") ||
-      href === "#contact" ||
-      new URL(href, window.location.href).pathname.replace(/\/$/, "") === "/contact";
+    const isContactLink = link.classList.contains("js-contact-btn") || href === "#contact";
 
-    if (!isContactLink || window.location.pathname.replace(/\/$/, "") === "/contact") return;
+    if (!isContactLink) return;
 
     event.preventDefault();
     openDialog(contactModal, link);
@@ -249,7 +247,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  const handleAjaxForm = (form) => {
+  const handleContactForm = (form) => {
     form.addEventListener("submit", async (event) => {
       event.preventDefault();
       let notice = form.querySelector(".form-notice");
@@ -262,7 +260,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       notice.textContent = "Sending...";
       try {
-        const response = await fetch(form.getAttribute("action") || window.location.pathname, {
+        const response = await fetch(form.getAttribute("action") || "/api/contact", {
           method: "POST",
           headers: { "Content-Type": "application/x-www-form-urlencoded" },
           body: new URLSearchParams(new FormData(form)).toString()
@@ -275,5 +273,5 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   };
 
-  document.querySelectorAll('form[name="contact"]').forEach(handleAjaxForm);
+  document.querySelectorAll('form[name="contact"]').forEach(handleContactForm);
 });
