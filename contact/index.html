@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Joseph Huckabee</title>
+  <meta name="description" content="Contact Joseph Huckabee for front-end development, UX/UI, and data analytics projects.">
+  <meta name="author" content="Joseph Huckabee">
+  <meta name="theme-color" content="#f6f1e8">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:image:alt" content="Portrait of Joseph Huckabee, front-end developer and digital designer">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Contact | Joseph Huckabee">
+  <meta name="twitter:description" content="Contact Joseph Huckabee for front-end development, UX/UI, and data analytics projects.">
+  <meta name="twitter:image" content="https://builtbyjoseph.com/assets/headshot.jpeg">
+  
+  <link rel="canonical" href="https://builtbyjoseph.com/contact/">
+  <meta property="og:type" content="website">
+  
+    <meta property="og:title" content="Contact | Joseph Huckabee">
+  
+  <meta property="og:description" content="Contact Joseph Huckabee for front-end development, UX/UI, and data analytics projects.">
+  <meta property="og:url" content="https://builtbyjoseph.com/contact/">
+  <meta property="og:site_name" content="Built by Joseph">
+  
+    <meta property="og:image" content="https://builtbyjoseph.com/assets/headshot.jpeg">
+  
+  
+  <link href="../assets/style.css" rel="stylesheet" type="text/css" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Joseph Huckabee",
+      "url": "https://builtbyjoseph.com",
+      "jobTitle": "Front-End Developer and Digital Designer",
+      "homeLocation": "New York, NY",
+      "image": "https://builtbyjoseph.com/assets/headshot.jpeg",
+      "knowsAbout": ["front-end development", "UX/UI design", "JavaScript", "HTML", "CSS", "brand identity", "data analytics", "accessible web design"],
+      "description": "Joseph Huckabee builds modern, accessible websites, portfolios, brand systems, and digital tools for businesses."
+    }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header role="banner">
+    <nav role="navigation" aria-label="Main navigation">
+  <ul>
+    
+    
+      
+      
+        
+      
+      <li>
+        <a
+          href="../"
+          
+        >
+          home
+        </a>
+      </li>
+    
+      
+      
+      <li>
+        <a
+          href="../portfolio/"
+          
+        >
+          coding
+        </a>
+      </li>
+    
+      
+      
+      <li>
+        <a
+          href="../logos/"
+          
+        >
+          design
+        </a>
+      </li>
+    
+      
+      
+      <li>
+        <a
+          href="../contact/"
+          aria-current="page"
+        >
+          contact
+        </a>
+      </li>
+    
+  </ul>
+</nav>
+
+    
+  </header>
+
+  <main id="main" role="main">
+    <section class="contact contact-hero" aria-labelledby="contact-heading">
+  <div class="contact-copy">
+    <p class="contact-eyebrow">Let’s build something sharp.</p>
+    <h1 id="contact-heading">We want to hear from you!</h1>
+    <p class="contact-lede">Whether you’re inquiring about services or just have a question, we're here to help.</p>
+    <div class="contact-pills" aria-hidden="true">
+      <span>UX/UI</span>
+      <span>Web & Apps</span>
+      <span>Data</span>
+      <span>Brand</span>
+    </div>
+  </div>
+<form id="contact-form" class="contact-form" name="contact" aria-label="Contact form">  <fieldset>
+      <legend>Contact Form</legend>
+      <input type="text" id="website" name="website" autocomplete="off" tabindex="-1" aria-hidden="true" style="position:absolute;left:-9999px;" />
+      <label for="fname">First name</label>
+      <input type="text" id="fname" name="firstName" placeholder="First name" autocomplete="given-name" required />
+      <label for="lname">Last name</label>
+      <input type="text" id="lname" name="lastName" placeholder="Last name" autocomplete="family-name" required />
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+      <label for="message">Message</label>
+<textarea id="message" name="message" placeholder="How can I help?" required></textarea>
+
+      <button type="submit">Submit</button>
+    </fieldset>
+  </form>
+  <p id="form-status" aria-live="polite"></p>
+
+<script>
+  (function () {
+    const form = document.getElementById("contact-form");
+    const status = document.getElementById("form-status");
+
+    if (!form || !status) return;
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+
+      const data = Object.fromEntries(new FormData(form));
+
+      try {
+        const res = await fetch("/api/contact", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(data),
+        });
+
+        if (res.ok) {
+          status.textContent = "Message sent successfully.";
+          form.reset();
+        } else {
+          status.textContent = "Sorry, something went wrong. Please try again.";
+        }
+      } catch (err) {
+        status.textContent = "Sorry, something went wrong. Please try again.";
+      }
+    });
+  })();
+</script>
+</section>
+
+  </main>
+
+  <footer role="contentinfo">
+  <p>&copy; Joseph Huckabee. All rights reserved.</p>
+</footer>
+
+
+  <script src="../assets/index.js"></script>
+  
+</body>
+</html>
