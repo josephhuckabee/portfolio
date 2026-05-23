@@ -1,0 +1,19 @@
+{
+  "redirects": [
+    {
+      "source": "/codingprojects.html",
+      "destination": "/codingprojects",
+      "permanent": true
+    },
+    {
+      "source": "/designprojects.html",
+      "destination": "/designprojects",
+      "permanent": true
+    },
+    {
+      "source": "/contact.html",
+      "destination": "/contact",
+      "permanent": true
+    }
+  ]
+}
