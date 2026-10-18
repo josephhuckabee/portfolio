@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!-- Generated from case-studies/content/hair-color-portfolio.json. Run node scripts/build-case-studies.js after editing. -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hair Color Portfolio — Case Study | Joseph Huckabee</title>
+  <meta name="description" content="Hair Color Portfolio case study by Joseph Huckabee.">
+  <meta name="author" content="Joseph Huckabee">
+  <meta name="theme-color" content="#f6f1e8">
+  <link rel="canonical" href="https://builtbyjoseph.com/case-studies/hair-color-portfolio.html">
+  <link href="../style.css" rel="stylesheet">
+  <link href="case-studies.css" rel="stylesheet">
+  <script src="../main.js" defer></script>
+</head>
+<body class="case-study-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header role="banner">
+    <nav role="navigation" aria-label="Main navigation">
+      <ul>
+        <li><a href="../index.html">home</a></li>
+        <li><a href="../codingprojects.html">development</a></li>
+        <li><a href="../designprojects.html">design</a></li>
+        <li><a href="../contact.html">contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main" role="main" class="case-study">
+    <div class="case-study__hero">
+      <a class="project-link case-study__back" href="../codingprojects.html">&larr; Back to coding projects</a>
+      <p class="eyebrow">coding / Case study</p>
+      <h1>Hair Color Portfolio</h1>
+    </div>
+    <div class="case-study__sections">
+      <section class="case-study__section" aria-labelledby="project-overview">
+        <h2 id="project-overview">Project Overview</h2>
+        <div class="case-study__content">
+          <p>A photography-led portfolio for a personal service business.
+I built JosephHuckabee.com to present my hair-color work, explain services, and give visitors routes to learn more and make contact. The experience uses the work itself as its primary introduction.</p>
+          <p>Project type — Personal brand and service portfolio.
+Work shown — Interface design, responsive layouts, image presentation, and front-end implementation.
+Technology — HTML, CSS, and vanilla JavaScript, with Netlify form markup and an optional serverless Instagram integration in the source.</p>
+          <p>The core journey is simple: discover the work, explore the portfolio or service menu, then follow the contact route. Supporting biography and social links give visitors additional context.</p>
+          <p><a class="project-link" href="https://josephhuckabee.com" target="_blank" rel="noopener noreferrer">Visit the hair-color website</a></p>
+          <figure><img src="../hairport.png" alt="Existing desktop capture of Joseph Huckabee’s hair portfolio, showing large photographs, navigation, introductory copy, and contact and portfolio buttons." loading="lazy" decoding="async"><figcaption>Existing portfolio capture. It documents a version of the interface and may differ from the current live site.</figcaption></figure>
+        </div>
+      </section>
+      <section class="case-study__section" aria-labelledby="the-problem">
+        <h2 id="the-problem">The Problem</h2>
+        <div class="case-study__content">
+          <p>For a visual service, visitors need to judge the work before deciding whether to take the next step. A strong photographic presentation still needs understandable navigation and useful service information.</p>
+          <p>The design challenge was to balance an expressive image-led introduction with practical routes to the full portfolio, biography, services, and contact. Large image files and animated presentation also introduced performance and motion considerations.</p>
+          <p>These are design requirements evident in the implementation, not findings from a documented customer study. No previous-site usability baseline was available.</p>
+        </div>
+      </section>
+      <section class="case-study__section" aria-labelledby="goals-objectives">
+        <h2 id="goals-objectives">Goals &amp; Objectives</h2>
+        <div class="case-study__content">
+          <p>Put the work first — Make hair-color photography the dominant content while keeping the business identity and next actions readable.</p>
+          <p>Make browsing practical — Provide a dedicated gallery, larger image views, a service menu, and a consistent route back to navigation.</p>
+          <p>Support smaller screens and different access needs — Adapt image sizing, manage motion, provide keyboard-operable interactions, and use explicit form labels.</p>
+          <p>Keep the portfolio maintainable — Separate page markup, shared styles, and interaction scripts, and retain a static image fallback for the optional social feed.</p>
+        </div>
+      </section>
+      <section class="case-study__section" aria-labelledby="research-discovery">
+        <h2 id="research-discovery">Research &amp; Discovery</h2>
+        <div class="case-study__content">
+          <p>The content inventory consists of original work images, a biography, a service menu, social links, and communication pages. It establishes three intended tasks: evaluate the aesthetic, understand the services, and find a way to get in touch.</p>
+          <p>I reviewed the site’s pages, shared CSS, carousel and gallery JavaScript, serverless feed code, and Git revisions. The public homepage, portfolio, services, and contact routes also loaded during review.</p>
+          <p>No customer interview transcripts, surveys, formal usability studies, or booking analytics were provided. To complete — Add any original discovery notes, collaborator credits, or documented business requirements that shaped the site.</p>
+        </div>
+      </section>
+      <section class="case-study__section" aria-labelledby="design-process">
+        <h2 id="design-process">Design Process</h2>
+        <div class="case-study__content">
+          <p>Information architecture — Home, Bio, Portfolio, Services, and Contact provide separate destinations for discovery, background, visual evaluation, service details, and communication. Instagram and TikTok links extend the personal brand beyond the site.</p>
+          <p>Visual hierarchy — Large photographs introduce the work; concise positioning copy and Contact/View portfolio actions create a next step. The service page groups offerings by name, description, and duration, while a contrasting display style separates headings from body text.</p>
+          <p>Image browsing — The portfolio grid supports enlarged image views with captions. The implementation responds to click, Enter, and Space, moves focus to the close control, and returns it to the selected image when the viewer closes. A full modal keyboard audit has not been documented.</p>
+          <p>Motion and performance — The carousel includes pause/resume controls and checks the visitor’s reduced-motion preference. It pauses when the document is hidden. Responsive image variants, explicit dimensions, lazy loading for later images, and prioritized initial images address the demands of a photography-heavy page.</p>
+          <p>Communication — The current Contact page presents a Hair Notes signup/message form rather than an appointment scheduler. Its fields and button copy establish a communication interface; provider delivery, mailing-list operations, and booking outcomes have not been verified.</p>
+        </div>
+      </section>
+      <section class="case-study__section" aria-labelledby="ai-assisted-workflow">
+        <h2 id="ai-assisted-workflow">AI-Assisted Workflow</h2>
+        <div class="case-study__content">
+          <p>To complete — Confirm whether you used AI tools on this project. If so, add the tool, a specific implementation or review task, the output you evaluated, your refinements, and the checks you performed. AI use documented for the museum project is not assumed to apply here.</p>
+        </div>
+      </section>
+      <section class="case-study__section" aria-labelledby="challenges-iterations">
+        <h2 id="challenges-iterations">Challenges &amp; Iterations</h2>
+        <div class="case-study__content">
+          <p>Adjusting the photographic hero — Revision 9ddfb12 changed desktop image widths and focal positioning, introduced intermediate-screen sizing, and aligned the image sizes attribute with the layout. The result is a more explicitly controlled image presentation across breakpoints; no load-time improvement was measured.</p>
+          <p>Handling mobile viewport space — The same revision moved from a tightly constrained small-screen layout toward dynamic viewport sizing, normal vertical overflow, and safe-area-aware bottom padding. A later revision, fb26d41, adjusted the mobile header grid and expanded the mobile layout breakpoint.</p>
+          <p>Refining navigation language — Revision 7543183 changed the navigation label from Appointments to Contact and added labeled social-icon links. The label better describes the destination’s current communication role. Other active-navigation details still merit review before claiming the navigation is fully validated.</p>
+          <p>Keeping a social-feed fallback — The client retains its static image links when the optional Instagram request fails or returns no items. The serverless function also handles a missing access token. This provides a defined fallback without proving that the live integration is configured.</p>
+        </div>
+      </section>
+      <section class="case-study__section" aria-labelledby="final-solution">
+        <h2 id="final-solution">Final Solution</h2>
+        <div class="case-study__content">
+          <p>The deployed site combines an image-led homepage, a dedicated gallery, biography, service descriptions, and communication pages. The existing capture above shows the photographic emphasis without substituting generic imagery.</p>
+          <p><a class="project-link" href="https://josephhuckabee.com/portfolio" target="_blank" rel="noopener noreferrer">Explore the portfolio</a></p>
+          <p><a class="project-link" href="https://josephhuckabee.com/services" target="_blank" rel="noopener noreferrer">Read the service menu</a></p>
+          <p><a class="project-link" href="https://josephhuckabee.com/contact" target="_blank" rel="noopener noreferrer">Open the contact page</a></p>
+          <p>The source includes responsive menus, gallery enlargement, carousel motion controls, and an optional social-feed pathway. Form submissions and third-party service delivery were not exercised during this review.</p>
+          <p>To complete — Add current mobile-menu and gallery-view screenshots, plus a short capture of pausing the carousel. Replace the existing desktop capture if the published design has changed.</p>
+        </div>
+      </section>
+      <section class="case-study__section" aria-labelledby="outcomes-reflection">
+        <h2 id="outcomes-reflection">Outcomes &amp; Reflection</h2>
+        <div class="case-study__content">
+          <p>Delivered — A live personal-service portfolio that gives the work prominence and organizes biography, gallery, service, and communication content into recognizable destinations.</p>
+          <p>The project demonstrates the tradeoffs of image-led interaction: photography needs room and visual impact, while motion, image payload, navigation, and communication labels still need deliberate attention.</p>
+          <p>No booking, signup, conversion, or usability improvement is claimed. A useful next step would be to observe prospective clients moving from an image to service information and contact, and verify the complete form-delivery workflow.</p>
+          <p>To complete — Add your own lessons from presenting your professional work, the decisions you would revisit, and any verified feedback or results.</p>
+        </div>
+      </section>
+      <section class="case-study__section" aria-labelledby="project-links">
+        <h2 id="project-links">External Project Links</h2>
+        <div class="case-study__links">
+<a class="project-link" href="https://josephhuckabee.com" target="_blank" rel="noopener noreferrer">Visit project</a>
+<a class="project-link" href="https://github.com/josephhuckabee/josephhuckabeehair" target="_blank" rel="noopener noreferrer">View source &amp; development history</a>
+        </div>
+      </section>
+    </div>
+    <a class="project-link case-study__back" href="../codingprojects.html">&larr; Back to coding projects</a>
+  </main>
+  <footer role="contentinfo">
+    <p>&copy; Joseph Huckabee. All rights reserved.</p>
+  </footer>
+</body>
+</html>

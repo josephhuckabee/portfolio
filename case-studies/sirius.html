@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!-- Generated from case-studies/content/sirius.json. Run node scripts/build-case-studies.js after editing. -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sirius — Case Study | Joseph Huckabee</title>
+  <meta name="description" content="Sirius case study by Joseph Huckabee.">
+  <meta name="author" content="Joseph Huckabee">
+  <meta name="theme-color" content="#f6f1e8">
+  <link rel="canonical" href="https://builtbyjoseph.com/case-studies/sirius.html">
+  <link href="../style.css" rel="stylesheet">
+  <link href="case-studies.css" rel="stylesheet">
+  <script src="../main.js" defer></script>
+</head>
+<body class="case-study-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header role="banner">
+    <nav role="navigation" aria-label="Main navigation">
+      <ul>
+        <li><a href="../index.html">home</a></li>
+        <li><a href="../codingprojects.html">development</a></li>
+        <li><a href="../designprojects.html">design</a></li>
+        <li><a href="../contact.html">contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main" role="main" class="case-study">
+    <div class="case-study__hero">
+      <a class="project-link case-study__back" href="../codingprojects.html">&larr; Back to coding projects</a>
+      <p class="eyebrow">coding / Case study</p>
+      <h1>Sirius</h1>
+    </div>
+    <div class="case-study__sections">
+      <section class="case-study__section" aria-labelledby="project-overview">
+        <h2 id="project-overview">Project Overview</h2>
+        <div class="case-study__content">
+          <p>A space-learning website with a news-reading interface.
+Sirius brings astronomy topics and space exploration into a shared visual system, then adds a feed for discovering stories from external publishers.</p>
+          <p>Project type — Educational content and editorial web experience.
+Work shown — Site-specific content organization, responsive interface development, navigation, and news-feed implementation on an Eleventy/Sass starter foundation.
+Technology — Eleventy, Nunjucks, Markdown, Sass, and client-side JavaScript; the repository also contains an RSS aggregation function for Netlify.</p>
+          <p>The live portfolio destination is hosted on Vercel. Its static pages and news interface load, while the Netlify-style function route returns 404 on that host. The case study distinguishes that deployment limitation from the feed logic present in the source.</p>
+          <p><a class="project-link" href="https://sirius2-0.vercel.app" target="_blank" rel="noopener noreferrer">Visit Sirius</a></p>
+          <figure><img src="../sirius.png" alt="Sirius wordmark filled with star imagery above the tagline Exploration into Space History." loading="lazy" decoding="async"><figcaption>Existing Sirius brand asset from the portfolio. This is a logo, not a screenshot of the current website.</figcaption></figure>
+        </div>
+      </section>
+      <section class="case-study__section" aria-labelledby="the-problem">
+        <h2 id="the-problem">The Problem</h2>
+        <div class="case-study__content">
+          <p>An educational site needs to help visitors move between broad concepts, historical figures, and exploration topics without losing their place. A news page adds another task: recognizing the subject, date, and origin of an external story.</p>
+          <p>The product challenge was to connect structured learning content with a changing feed, while keeping navigation and reading patterns consistent across screen sizes.</p>
+          <p>External content also creates a reliability constraint. A visually complete feed needs loading, unavailable, and fallback states as well as story cards. Current headline freshness cannot be inferred from the presence of the page.</p>
+        </div>
+      </section>
+      <section class="case-study__section" aria-labelledby="goals-objectives">
+        <h2 id="goals-objectives">Goals &amp; Objectives</h2>
+        <div class="case-study__content">
+          <p>Organize exploration — Give space, the Milky Way, astronomers, exploration, cosmology, and news their own destinations in a deliberate order.</p>
+          <p>Create a consistent reading system — Reuse typography, page layouts, image treatments, and cards across topics.</p>
+          <p>Expose useful news context — Show story titles, source attribution, dates, and sorting controls, with links back to publishers.</p>
+          <p>Account for data dependencies — Define fallback behavior and make deployment assumptions explicit when describing the completed experience.</p>
+        </div>
+      </section>
+      <section class="case-study__section" aria-labelledby="research-discovery">
+        <h2 id="research-discovery">Research &amp; Discovery</h2>
+        <div class="case-study__content">
+          <p>The README describes a space-themed Eleventy site with Sass styling, responsive layouts, and a live-news page. Source files establish its content categories, shared templates, navigation ordering, and feed behavior.</p>
+          <p>Git history identifies an Eleventy/Sass starter as the original foundation. My case study focuses on the site-specific changes visible in the project history and does not present the underlying starter as entirely original work.</p>
+          <p>No formal audience research or usability-test record was found. The intended reader tasks are inferred from the implemented content and controls. To complete — Add the original assignment or project brief, your precise responsibilities, and any collaborator or starter credits you want to emphasize.</p>
+        </div>
+      </section>
+      <section class="case-study__section" aria-labelledby="design-process">
+        <h2 id="design-process">Design Process</h2>
+        <div class="case-study__content">
+          <p>Information architecture — Page metadata assigns navigation order; a shared collection feeds both the desktop links and mobile menu. The same underlying list supports consistent destinations across screen sizes.</p>
+          <p>Visual hierarchy — Fraunces headings and Space Grotesk body text distinguish section titles from explanatory content. Dark surfaces, space imagery, accent colors, and repeated cards create a common presentation across the educational pages.</p>
+          <p>Responsive reading — Grids collapse at narrower breakpoints and content padding changes for smaller screens. A native details/summary control exposes the compact navigation. The source marks the current page and gives the menu and logo accessible names; no accessibility conformance audit is claimed.</p>
+          <p>News cards — The client renders a date, title, and named source for each story. A labeled select offers newest, oldest, title, and source sorting. The reader follows a source link to the publisher rather than reading a reproduced full article.</p>
+          <p>Feed states — The implementation defines a loading message, an unavailable message, a serverless feed request, a browser proxy attempt, and a bundled historical fallback. The available script loads when the page opens; it does not establish continuous background refresh.</p>
+        </div>
+      </section>
+      <section class="case-study__section" aria-labelledby="ai-assisted-workflow">
+        <h2 id="ai-assisted-workflow">AI-Assisted Workflow</h2>
+        <div class="case-study__content">
+          <p>To complete — Confirm whether you used AI tools on this project. If so, add the tool, a specific implementation or review task, the output you evaluated, your refinements, and the checks you performed. AI use documented for the museum project is not assumed to apply here.</p>
+        </div>
+      </section>
+      <section class="case-study__section" aria-labelledby="challenges-iterations">
+        <h2 id="challenges-iterations">Challenges &amp; Iterations</h2>
+        <div class="case-study__content">
+          <p>Making page order explicit — Revision 82e0aa4 introduced navOrder-driven ordering and used the same collection for desktop and compact navigation. This turns navigation order into editable content metadata rather than an incidental file order.</p>
+          <p>Adding the news experience — The same revision added the news page, RSS aggregation function, client rendering, and sort controls. It connected a new content type to the existing visual system and external source links.</p>
+          <p>Adding a further fallback — Revision 3371090 added a bundled JSON fallback after the serverless and proxy attempts. This provides historical material when the request chain fails, but that material should not be described as current live reporting.</p>
+          <p>Refining narrow-screen presentation — Revision d73d881 added a compact-menu backdrop, adjusted mobile hero and object layouts, and moved responsive Sass after the component styles. These are recorded layout changes; there is no documented user-test result establishing their effectiveness.</p>
+          <p>Deployment boundary — The inspected Vercel destination serves the news page and bundled fallback, but not the Netlify function endpoint. A future iteration should verify a compatible backend route and the freshness of rendered results. This portfolio update does not change the Sirius application.</p>
+        </div>
+      </section>
+      <section class="case-study__section" aria-labelledby="final-solution">
+        <h2 id="final-solution">Final Solution</h2>
+        <div class="case-study__content">
+          <p>The live site presents its topic pages through shared navigation and consistent educational layouts. The Space News page contains a loading region and sorting interface, with the client-side request and rendering logic included in the deployment.</p>
+          <p><a class="project-link" href="https://sirius2-0.vercel.app/SpaceNews/" target="_blank" rel="noopener noreferrer">Open Space News</a></p>
+          <p><a class="project-link" href="https://sirius2-0.vercel.app/Exploration/" target="_blank" rel="noopener noreferrer">Explore the topic pages</a></p>
+          <p>Live-feed availability is not claimed: the backend route returned 404 during review, and the browser fallback chain was not visually exercised. The packaged fallback contains historical stories.</p>
+          <p>To complete — Add current screenshots of a topic page, the mobile navigation, and the news interface in populated and unavailable states. Include a recording of sorting only after confirming it in the deployed experience.</p>
+        </div>
+      </section>
+      <section class="case-study__section" aria-labelledby="outcomes-reflection">
+        <h2 id="outcomes-reflection">Outcomes &amp; Reflection</h2>
+        <div class="case-study__content">
+          <p>Delivered — A deployed educational website with shared templates, explicit navigation order, responsive topic layouts, and a news-feed interface with multiple data-loading paths.</p>
+          <p>The project highlights that an editorial interface depends on more than card styling. Source attribution, dates, loading behavior, data freshness, and hosting compatibility are part of the reading experience.</p>
+          <p>No audience-growth, engagement, or learning-outcome improvement has been measured for this case study. The next evidence to gather is whether readers can navigate between topics, understand story sources, and recognize stale or unavailable news.</p>
+          <p>To complete — Add your personal reflections on adapting the starter, the feed implementation, and the decisions you would change in the next version.</p>
+        </div>
+      </section>
+      <section class="case-study__section" aria-labelledby="project-links">
+        <h2 id="project-links">External Project Links</h2>
+        <div class="case-study__links">
+<a class="project-link" href="https://sirius2-0.vercel.app" target="_blank" rel="noopener noreferrer">Visit project</a>
+<a class="project-link" href="https://github.com/josephhuckabee/sirius2.0" target="_blank" rel="noopener noreferrer">View source &amp; development history</a>
+        </div>
+      </section>
+    </div>
+    <a class="project-link case-study__back" href="../codingprojects.html">&larr; Back to coding projects</a>
+  </main>
+  <footer role="contentinfo">
+    <p>&copy; Joseph Huckabee. All rights reserved.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- Generated from case-studies/content/{{slug}}.json. Run node scripts/build-case-studies.js after editing. -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{title}} — Case Study | Joseph Huckabee</title>
+  <meta name="description" content="{{title}} case study by Joseph Huckabee.">
+  <meta name="author" content="Joseph Huckabee">
+  <meta name="theme-color" content="#f6f1e8">
+  <link rel="canonical" href="https://builtbyjoseph.com/case-studies/{{slug}}.html">
+  <link href="../style.css" rel="stylesheet">
+  <link href="case-studies.css" rel="stylesheet">
+  <script src="../main.js" defer></script>
+</head>
+<body class="case-study-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header role="banner">
+    <nav role="navigation" aria-label="Main navigation">
+      <ul>
+        <li><a href="../index.html">home</a></li>
+        <li><a href="../codingprojects.html">development</a></li>
+        <li><a href="../designprojects.html">design</a></li>
+        <li><a href="../contact.html">contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main" role="main" class="case-study">
+    <div class="case-study__hero">
+      <a class="project-link case-study__back" href="../{{backPage}}">&larr; Back to {{category}} projects</a>
+      <p class="eyebrow">{{category}} / Case study</p>
+      <h1>{{title}}</h1>
+    </div>
+    <div class="case-study__sections">
+{{sections}}
+      <section class="case-study__section" aria-labelledby="project-links">
+        <h2 id="project-links">External Project Links</h2>
+        <div class="case-study__links">
+{{links}}
+        </div>
+      </section>
+    </div>
+    <a class="project-link case-study__back" href="../{{backPage}}">&larr; Back to {{category}} projects</a>
+  </main>
+  <footer role="contentinfo">
+    <p>&copy; Joseph Huckabee. All rights reserved.</p>
+  </footer>
+</body>
+</html>
