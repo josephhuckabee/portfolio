@@ -2,7 +2,7 @@
 
 These authoring notes support Hair Color Portfolio, Sirius, and Anthropos. The case studies use the existing JSON content format and shared template. They do not add research results, performance metrics, AI usage, or stakeholder quotations that were not supplied or found in the project materials.
 
-The Wireframes & Prototypes section was removed from all four website case studies at Joseph's request. The museum URL remains the existing GitHub Pages address because the message mentioning a replacement link did not include a URL.
+The Wireframes & Prototypes section was removed from all four website case studies at Joseph's request. The museum links now use its verified custom domain, https://historicalglassmuseum.com/.
 
 ## Hair Color Portfolio
 
@@ -56,6 +56,6 @@ The Wireframes & Prototypes section was removed from all four website case studi
 3. Personal reflections and any genuine feedback. Add analytics or outcomes only when evidence exists.
 4. Current mobile screenshots and interaction captures: hair gallery/carousel controls, Sirius topic/news states and sorting, and Anthropos petition/resources/menu/district tools.
 5. Verified form operations and service ownership for the hair site and Anthropos; hosting-compatible news delivery and data freshness for Sirius.
-6. The museum replacement live URL, which was requested separately because no link came through.
+6. Museum live links were updated to https://historicalglassmuseum.com/ after checking the custom domain.
 
 No website was deployed. Existing portfolio styles, navigation, shared templates, project cards, and third-party project source repositories were not edited. Browser visual verification remains unavailable in this session; checks cover generated structure, assets, links, static output, and preservation of existing layout code.

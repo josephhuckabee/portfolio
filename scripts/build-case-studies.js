@@ -69,6 +69,7 @@ function renderStudy(study, slug, template) {
   }).join("\n");
   const fields = {
     slug: escape(slug), title: escape(study.title), category: escape(study.category),
+    categoryLabel: study.category === "coding" ? "development" : "design",
     backPage: `${study.category}projects.html`, sections,
     links: study.links.length ? study.links.map(link).join("\n") : '<div class="case-study__placeholder"><span>Add external project links here.</span></div>'
   };

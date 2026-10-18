@@ -8,7 +8,7 @@ This is an authoring note, not a public case study page. The existing Eleventy c
 - Joseph further confirmed that Codex helped cross-check his work, produce and test code, and review accessibility and usability. No specific prompts, test protocols, rejected outputs, or elapsed-time comparisons were provided.
 - Local project repository: `/Users/josephhuckabee/Desktop/Code/glass museum`, clean at `234289a5757ba57a3dd41f26aa6c3549f99e7121` during review.
 - Origin: https://github.com/josephhuckabee/historic_glass_museum_foundation
-- Live site: https://josephhuckabee.github.io/historic_glass_museum_foundation/
+- Live site: https://historicalglassmuseum.com/
 - The live `index.html`, `support-us.html`, `donations.html`, `contact-us.html`, and `newsletter.html` each returned HTTP 200 and matched the corresponding local source byte-for-byte during this session. No transactions, contact submissions, or newsletter operations were performed.
 - `README.md`: static architecture, GitHub Pages root publishing, PDF-and-check membership, external-service requirements for contact delivery, and email-provider responsibilities.
 - `index.html`: homepage hierarchy, visit/support actions, visitor information, announcements, and persistent membership access.
@@ -42,3 +42,7 @@ This is an authoring note, not a public case study page. The existing Eleventy c
 6. Real screenshots of the homepage, desktop navigation, expanded membership section, donation options, contact form/status, newsletter viewer, and mobile menu/layout. Add a short interaction recording if useful.
 
 The case study makes no claims about interview findings, formal usability-test results, analytics, conversion lifts, task-completion improvements, or administrator self-service. No browser connection was available for visual desktop/mobile verification in this session; the existing responsive layout and functionality were preserved.
+
+## Live-link update
+
+The custom domain `https://historicalglassmuseum.com/` was verified as serving the museum project. Portfolio preview and case study homepage, membership, donation, contact, and newsletter links now use that domain. Earlier source comparisons above refer to the GitHub Pages deployment reviewed when the text was drafted.

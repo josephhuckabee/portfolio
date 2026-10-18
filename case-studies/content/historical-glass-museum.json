@@ -4,7 +4,7 @@
   "links": [
     {
       "label": "Visit the live museum website",
-      "url": "https://josephhuckabee.github.io/historic_glass_museum_foundation/"
+      "url": "https://historicalglassmuseum.com/"
     },
     {
       "label": "View source & development history",
@@ -39,7 +39,7 @@
         {
           "type": "link",
           "label": "Visit the live museum website",
-          "url": "https://josephhuckabee.github.io/historic_glass_museum_foundation/"
+          "url": "https://historicalglassmuseum.com/"
         },
         {
           "type": "image",
@@ -204,7 +204,7 @@
         {
           "type": "link",
           "label": "Explore the live museum website",
-          "url": "https://josephhuckabee.github.io/historic_glass_museum_foundation/"
+          "url": "https://historicalglassmuseum.com/"
         },
         {
           "type": "text",
@@ -217,12 +217,12 @@
         {
           "type": "link",
           "label": "View the membership pathway",
-          "url": "https://josephhuckabee.github.io/historic_glass_museum_foundation/support-us.html#membership"
+          "url": "https://historicalglassmuseum.com/support-us.html#membership"
         },
         {
           "type": "link",
           "label": "View donation options",
-          "url": "https://josephhuckabee.github.io/historic_glass_museum_foundation/donations.html"
+          "url": "https://historicalglassmuseum.com/donations.html"
         },
         {
           "type": "text",
@@ -231,7 +231,7 @@
         {
           "type": "link",
           "label": "View the contact interface",
-          "url": "https://josephhuckabee.github.io/historic_glass_museum_foundation/contact-us.html"
+          "url": "https://historicalglassmuseum.com/contact-us.html"
         },
         {
           "type": "text",
@@ -240,7 +240,7 @@
         {
           "type": "link",
           "label": "Browse the newsletter archive",
-          "url": "https://josephhuckabee.github.io/historic_glass_museum_foundation/newsletter.html"
+          "url": "https://historicalglassmuseum.com/newsletter.html"
         },
         {
           "type": "text",
